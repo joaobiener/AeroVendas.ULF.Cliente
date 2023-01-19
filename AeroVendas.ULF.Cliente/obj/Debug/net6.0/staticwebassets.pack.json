@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\assets\\AeroVendas.jpg"
     },
     {
+      "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\assets\\AeroVendasV2.jpg",
+      "PackagePath": "staticwebassets\\assets\\AeroVendasV2.jpg"
+    },
+    {
       "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\assets\\Dev.png",
       "PackagePath": "staticwebassets\\assets\\Dev.png"
     },

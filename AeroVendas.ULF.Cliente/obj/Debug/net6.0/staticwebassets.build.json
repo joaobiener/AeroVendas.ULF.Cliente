@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JCFQhxvOpxTMocCME31VdV2cwOj/A+NAfmN0p1+lw/I=",
+  "Hash": "t7+M2H0MZ0hPHRuWTbx5UM6/XkMIRkNrTxTibgp/AzQ=",
   "Source": "AeroVendas.ULF.Cliente",
   "BasePath": "/",
   "Mode": "Root",
@@ -7308,6 +7308,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\AeroVendas.jpg"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\assets\\AeroVendasV2.jpg",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "assets/AeroVendasV2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\AeroVendasV2.jpg"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\assets\\Dev.png",

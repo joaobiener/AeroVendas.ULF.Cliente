@@ -1,0 +1,12 @@
+
+
+
+#bg[b-na00wslyz4] {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
