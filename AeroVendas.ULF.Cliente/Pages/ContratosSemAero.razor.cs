@@ -47,8 +47,9 @@ namespace AeroVendas.ULF.Cliente.Pages
 		//Busca de todos os normtativos
         private async Task GetCidades()
         {
-            //Não irei fazer chamada na API pela demora. Irei inicializar a lista de Cidades 
-            CidadesList.Add("ITABORAÍ");
+			//Não irei fazer chamada na API pela demora. Irei inicializar a lista de Cidades 
+			CidadesList.Add("");
+			CidadesList.Add("ITABORAÍ");
             CidadesList.Add("MARICÁ");
             CidadesList.Add("NITERÓI");
             CidadesList.Add("RIO BONITO");
@@ -85,11 +86,12 @@ namespace AeroVendas.ULF.Cliente.Pages
 			await GetContratosAeroVendas();
 		}
 
-		private async Task SelectChanged(string searchTerm)
+		private async Task SelectCidadeChanged(string searchTerm)
 		{
+
 			_viewContratoSemAeroVendasParameters.PageNumber = 1;
 			_cidadesParam.Clear();
-			_cidadesParam.Add("NomeNormativo",searchTerm);
+			_cidadesParam.Add("Cidade", searchTerm);
 
 			await GetContratosAeroVendas();
 		}

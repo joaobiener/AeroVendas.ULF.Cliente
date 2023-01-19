@@ -3,12 +3,14 @@
 
 	<select class="form-select" id="floatingSelectSort" aria-label="Floating Sort" @onchange="ApplySort">
 
-		<option value="nomeFuncionario">Colaborador</option>
-		<option value="nomeFuncionario desc">Colaborador: Descendente</option>
-		<option value="DataLeitura">Data Aceite</option>
-		<option value="DataLeitura desc">Data Aceite: Descendente</option>
-		<option value="NomeGerencia">Gerência</option>
-		<option value="NomeNormativo">Normativo</option>
+		<option value="" selected="selected"></option>
+		<option value="contrato">Contrato</option>
+		<option value="contrato desc">Contrato: Descendente</option>
+		<option value="Beneficiario">NomeBeneficiario</option>
+		<option value="Beneficiario desc">NomeBeneficiario: Descendente</option>
+		<option value="Carteirinha">CodigoBeneficiario</option>
+		<option value="Carteirinha desc">CodigoBeneficiario: Descendente</option>
+
 
 	</select>
 	<label for="floatingSelectSort">Ordenar Por</label>
