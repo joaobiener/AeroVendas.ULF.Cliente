@@ -10,7 +10,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 {
 	public partial class ContratosSemAero : IDisposable
 	{
-		public List<ViewContratoSemAeroVendas> ViewContratoSemAeroVendas { get; set; } = new List<ViewContratoSemAeroVendas>();
+		public List<ViewContratoSemAeroVendas> ListContratoSemAeroVendas { get; set; } = new List<ViewContratoSemAeroVendas>();
 
 		public List<string> CidadesList { get; set; } = new List<string>();
 
@@ -21,7 +21,6 @@ namespace AeroVendas.ULF.Cliente.Pages
 		Dictionary<string, string> _cidadesParam = new Dictionary<string, string>();
 
 
-        private string _selectNomeNormativo = "";
 		[Inject]
 		public IViewAeroVendasHttpRepository? ViewAeroVendasHttpRepo { get; set; }
 
@@ -57,7 +56,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 		{
 			var pagingResponse = await ViewAeroVendasHttpRepo.GetContratosSemAeroVendas(_viewContratoSemAeroVendasParameters, _cidadesParam);
 
-			ViewContratoSemAeroVendas = pagingResponse.Items;
+            ListContratoSemAeroVendas = pagingResponse.Items;
 			MetaData = pagingResponse.MetaData;
 		}
 

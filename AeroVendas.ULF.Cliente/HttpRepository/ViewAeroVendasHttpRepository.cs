@@ -69,7 +69,7 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 			};
 
 			var response =
-                await _client.GetAsync(QueryHelpers.AddQueryString("viewAeroVendasParameters/GetCidadeSemAero", queryStringParam));
+                await _client.GetAsync(QueryHelpers.AddQueryString("ViewContratoSemAero/GetCidadeSemAero", queryStringParam));
 
             var content = await response.Content.ReadAsStringAsync();
 

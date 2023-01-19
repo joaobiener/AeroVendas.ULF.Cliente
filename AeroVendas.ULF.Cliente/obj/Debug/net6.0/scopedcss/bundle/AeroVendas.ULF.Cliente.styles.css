@@ -1,3 +1,78 @@
+/* /Components/AeroVendasTable.razor.rz.scp.css */
+/* /Components/Cidades.razor.rz.scp.css */
+.search-input[b-9swgr1luqw] {
+	margin-bottom: 10px;
+}
+/* /Components/PageSizeDropDown.razor.rz.scp.css */
+.form-control[b-lh94fr56fz] {
+	width: auto;
+	float: right;
+}
+/* /Components/Search.razor.rz.scp.css */
+.search-input[b-u10iee6wf6] {
+	margin-bottom: 10px;
+}
+/* /Pages/ContratosSemAero.razor.rz.scp.css */
+
+@page {
+    size: landscape;
+   
+    margin:  2cm 0cm 2cm 0cm; 
+}
+
+@page:first {
+    margin: 1cm 0cm 2cm 0cm;
+}
+
+
+@page {
+    @bottom-left {
+        content: 'Página ' counter(page) ' de ' counter(pages);
+    }
+}
+/*
+body {
+    counter-reset: page;
+} 
+
+#content {
+    display:table;
+}
+
+#pageFooter {
+    display: table-footer-group;
+    counter-increment: page;
+}
+    #pageFooter:after {
+        content: "Página " counter(page);
+        left: 0;
+        top: 100%;
+        white-space: nowrap;
+        z-index: 20;
+        -moz-border-radius: 5px;
+        -moz-box-shadow: 0px 0px 4px #222;
+        background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    }*/
+/* /Pages/CustomNotFound.razor.rz.scp.css */
+.customNotFound[b-1nw1yyp3ri] {
+	text-align: center;
+	color: red;
+	font-size: 35px;
+	height:800px;
+	box-shadow: 1px 1px 1px grey;
+	background-image: url("assets/404.jpg");
+	background-repeat: no-repeat;
+}
+/* /Pages/Index.razor.rz.scp.css */
+.center[b-qdqmij07tl] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+}
+
+
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-s3epnszf9b] {
     position: relative;

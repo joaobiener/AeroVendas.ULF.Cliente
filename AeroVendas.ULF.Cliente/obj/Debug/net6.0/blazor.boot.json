@@ -1,6 +1,10 @@
 {
   "cacheBootResources": true,
-  "config": [ ],
+  "config": [
+    "appsettings.json",
+    "appsettings.Production.json",
+    "appsettings.Staging.json"
+  ],
   "debugBuild": true,
   "entryAssembly": "AeroVendas.ULF.Cliente",
   "icuDataMode": 0,
@@ -13,6 +17,8 @@
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-SuNk6pu0VYvOrLD8o4+xeB+eHRkkv0mHCl4LKVRg8u8=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-iFHifhevHZX+xH2Yvy\/NOtvEAaDO3UmaXwyup\/g32Ak=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-3TE7F3H4g8o6S+SpkGTHlSmBCMvOi8GcBNHZIGLPg8s=",
+      "Microsoft.AspNetCore.WebUtilities.dll": "sha256-D5akJeBd7NNITuzAXxlX7zl2jfsc4uTKyeEKwwNhqoo=",
+      "Microsoft.EntityFrameworkCore.Abstractions.dll": "sha256-DyVAjnHJevXd\/2nICc2sdRJu7NoMpEhSY1qWMttEzEM=",
       "Microsoft.Extensions.Configuration.dll": "sha256-c8yYhfrOBLEnOBglLTu9peXSbJDwFpuT4UQiXSv28Og=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-5Otet+KKVUjNkE\/hqcNWmt75H1K2VNuKPFagpRd6Ces=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-wNKhG3Ovx8jqxbscz2AALlsTLfI6GL2dyDhe63mSsoM=",
@@ -23,13 +29,18 @@
       "Microsoft.Extensions.FileProviders.Abstractions.dll": "sha256-7PzvEcQvpK1c8tTX9VPI8AF+XrekqbAytNBQXJjvTvQ=",
       "Microsoft.Extensions.FileProviders.Physical.dll": "sha256-sXujvGMZDgBBZ9HqfcEq9XsM0pvwyhPt60NA9qLDzGI=",
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-viiXOG0fwhWobT0TQ1ZOJiZBdRvYRlWbDtjz+6d8sQI=",
+      "Microsoft.Extensions.Http.dll": "sha256-K5\/O91dt69IHKav69ftn+7DKPmnzkipTvwM4Sd4Zres=",
       "Microsoft.Extensions.Logging.dll": "sha256-GDZQCBtVHfrZZ6fL95lGoinLeUWLjQShLbfESwO7mrc=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-TeK78LW1mefI\/Ao7uFcK6TBhgjx9HUMSm3nqBsUC6pI=",
+      "Microsoft.Extensions.Logging.Configuration.dll": "sha256-qhfTTvTErLRPiII+c9vqvNtxBwcpKJ9Id5WCXj1xtV0=",
       "Microsoft.Extensions.Options.dll": "sha256-eGESyy9mRu8RcCGajAu4E8nxSmeB5nxiZkFPVaZ5Vl0=",
+      "Microsoft.Extensions.Options.ConfigurationExtensions.dll": "sha256-pCRMvY6QOipcLEPwG0jDVYGMYYPqjvu72cPFty6DZKE=",
       "Microsoft.Extensions.Primitives.dll": "sha256-jOmoWSfsdQexH\/6QCA56gR1RMEqeix2iDDUBWbpAOQI=",
       "Microsoft.JSInterop.dll": "sha256-8rJkvKxV\/xke9flVSby3wXsdofRAr9AzsMeVjUmVAMo=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-9Kkxpe\/nXXP3FmowCjDeA4p54SbRWz0G1d0lfgRni0c=",
+      "Microsoft.Net.Http.Headers.dll": "sha256-P66ftDrXwc6ayND8uYzIk0CPQy1GjNZAPHx9RMhi3V4=",
       "System.IO.Pipelines.dll": "sha256-6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=",
+      "Toolbelt.Blazor.HttpClientInterceptor.dll": "sha256-bdK8iH5zRXp0oRwnxT4Nh173M2BfaQd8EiHEpBT0xJc=",
       "Microsoft.CSharp.dll": "sha256-4fPFPjjlyFdyelAiuART+UWSfvOvnuUrIzeGLaF3ik0=",
       "Microsoft.VisualBasic.Core.dll": "sha256-UQ\/aY55vxbXWpuqw8C06z\/oo5lE+4oAspb4kc+j6MTU=",
       "Microsoft.VisualBasic.dll": "sha256-Ckt\/MufTC7RYZlcpv6ZtrE5I9kqFapsEm0Lj3npcwVE=",
@@ -196,13 +207,17 @@
       "mscorlib.dll": "sha256-AtjrcSyN9gleNjzHPZRVJVh6sNEX1FxRBHN\/ZN6Yt3Q=",
       "netstandard.dll": "sha256-\/CRbZZ6en3BoMsR5fhsJCTE9TYhik+E7KU+O9cBdC9c=",
       "System.Private.CoreLib.dll": "sha256-ftEeXsH4HQ3J6VlVJuI3mbfqZxGyNtYVxuIQD\/8waHw=",
-      "AeroVendas.ULF.Cliente.dll": "sha256-aM0CYY1dIJEntJ4ZLj71Kbb9MBpzXhe6bM5pbZyFs2M="
+      "Entities.dll": "sha256-iy5JhDQiwpk1HcjR6kw5uoccEBPTx+faoReLILAVzt0=",
+      "Shared.dll": "sha256-R7bWAFsVSJEffnYrFV66mv6NOAFqk5ZOK1raLr19M8Y=",
+      "AeroVendas.ULF.Cliente.dll": "sha256-Cw5337c2drT6bQWWZ5vZ04NU4kgJYdm2dMm5krCyZTE="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "AeroVendas.ULF.Cliente.pdb": "sha256-4uMPJN1dKhWC8jr5v1DVdveh\/9s3g6tZsY7mVa1KFQI="
+      "Entities.pdb": "sha256-\/nuxnFZkfZGJQZR6a7EcbuNZO8FBy+cp81C4xjhD+W0=",
+      "Shared.pdb": "sha256-hI+KH0EY2Y5og8Lm74IX8GgKZBQE\/7Yrc6+kjvfmn6k=",
+      "AeroVendas.ULF.Cliente.pdb": "sha256-8qCc6OzpTpSyb49ZwILEd\/gvMI2WcVrtM0W2kR6pykU="
     },
     "runtime": {
       "dotnet.6.0.12.1wms6qxvie.js": "sha256-qD0QxS71qYTQZMj+JDk0IXr28ewa+pSDzShFKSNkQ+0=",

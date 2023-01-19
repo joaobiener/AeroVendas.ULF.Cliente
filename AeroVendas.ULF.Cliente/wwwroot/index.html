@@ -4,20 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>AeroVendas.ULF.Cliente</title>
-    <link href="css/bootstrap/bootstrap-icons.css" rel="stylesheet" />
+    <title>Aero Vendas</title>
+
     <link href="css/app.css" rel="stylesheet" />
     <link href="AeroVendas.ULF.Cliente.styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="app">Loading...</div>
-
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
+    <div id="app">
+        <button class="btn btn-success" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Carregando...
+        </button>
     </div>
+
+  
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
 

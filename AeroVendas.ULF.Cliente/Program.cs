@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Toolbelt.Blazor.Extensions.DependencyInjection;
 using Entities.Configuration;
 using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Components.Authorization;
-using AeroVendas.ULF.Cliente.AuthProviders;
+
 
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);

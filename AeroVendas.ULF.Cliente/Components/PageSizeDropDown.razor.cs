@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 
-namespace Normativo.Cliente.Components
+namespace AeroVendas.ULF.Cliente.Components
 {
     public partial class PageSizeDropDown
 	{
