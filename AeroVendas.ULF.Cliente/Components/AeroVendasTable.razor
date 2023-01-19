@@ -4,35 +4,31 @@
 	<table class="table table-success table-hover shadow">
 		<thead>
 			<tr>
-				<th scope="col">Matrícula</th>
-				<th scope="col">Colaborador</th>
-				<th scope="col">Gerência</th>
-				<th scope="col">Coordenação</th>
-				<th scope="col">Normativo</th>
-				<th scope="col">Data de Aceite</th>
-			</tr>
+				<th scope="col">Contrato</th>
+				<th scope="col">Carteirinha</th>
+				<th scope="col">Nome do Beneficiário Titular</th>
+				<th scope="col">Prêmio Atual</th>
+				<th scope="col">Dependentes</th>
+				</tr>
 		</thead>
 		<tbody>
-			@foreach (var viewLogNormativo in viewAeroVendas)
+			@foreach (var viewItemAeroVenda in viewAeroVendas)
 			{
 				<tr >
 					<td class="align-middle small">
-						@viewLogNormativo.Matricula
+						@viewItemAeroVenda.Contrato
 					</td>
 					<td class="align-middle small">
-						<small>@viewLogNormativo.NomeFuncionario</small>
+						<small>@viewItemAeroVenda.CodigoBeneficiario</small>
 					</td>
 					<td class="align-middle small">
-						<small>@viewLogNormativo.NomeGerencia</small>
+						<small>@viewItemAeroVenda.NomeBeneficiario</small>
 					</td>
 					<td class="align-middle small">
-						<small>@viewLogNormativo.NomeCoordenacao</small>
+						<small>@viewItemAeroVenda.PremioAnual</small>
 					</td>
 					<td class="align-middle small">
-						<small><a href="http://intranet.niteroi.unimed/sites/Unimed/Normativos/SitePages/Normativo.aspx?NewsId=@viewLogNormativo.IdNormativo" target="_blank">@viewLogNormativo.NomeNormativo</a></small>
-					</td>
-					<td class="align-middle small">
-						<small>@viewLogNormativo.DataLeitura</small>
+						<small>@viewItemAeroVenda.NumeroDependentes</small>
 					</td>
 
 				</tr>

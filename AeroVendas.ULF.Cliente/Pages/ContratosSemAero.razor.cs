@@ -1,5 +1,5 @@
 ﻿using AeroVendas.ULF.Cliente.HttpInterceptor;
-using Normativo.Cliente.HttpRepository;
+using AeroVendas.ULF.Cliente.HttpRepository;
 using Entities.Models;
 using Shared.RequestFeatures;
 using Microsoft.AspNetCore.Components;
@@ -8,22 +8,22 @@ using Microsoft.JSInterop;
 
 namespace AeroVendas.ULF.Cliente.Pages
 {
-	public partial class ReportNormativos : IDisposable
+	public partial class ContratosSemAero : IDisposable
 	{
-		public List<ViewLogsNormativo> ViewLogNormativoList { get; set; } = new List<ViewLogsNormativo>();
+		public List<ViewContratoSemAeroVendas> ViewContratoSemAeroVendas { get; set; } = new List<ViewContratoSemAeroVendas>();
 
-		public List<string> ViewNomeNormativoList { get; set; } = new List<string>();
+		public List<string> CidadesList { get; set; } = new List<string>();
 
 		public MetaData MetaData { get; set; } = new MetaData();
 
-		private ViewLogNormativoParameters _viewLogNormativoParameters = new ViewLogNormativoParameters();
+		private ViewAeroVendasParameters _viewContratoSemAeroVendasParameters = new ViewAeroVendasParameters();
 
-		Dictionary<string, string> _nomeNormativoParam = new Dictionary<string, string>();
+		Dictionary<string, string> _cidadesParam = new Dictionary<string, string>();
 
 
         private string _selectNomeNormativo = "";
 		[Inject]
-		public IViewLogNormativoHttpRepository? ViewLogsNormativoRepo { get; set; }
+		public IViewAeroVendasHttpRepository? ViewAeroVendasHttpRepo { get; set; }
 
 
 
@@ -33,63 +33,63 @@ namespace AeroVendas.ULF.Cliente.Pages
 		protected async override Task OnInitializedAsync()
 		{
 			Interceptor.RegisterEvent();
-			await GetNomeNormativos();
-			await GetLogsNormativo();
+			await GetCidades();
+			await GetContratosAeroVendas();
 
 		}
 
 		private async Task SelectedPage(int page)
 		{
-			
-			_viewLogNormativoParameters.PageNumber = page;
-			await GetLogsNormativo();
+
+			_viewContratoSemAeroVendasParameters.PageNumber = page;
+			await GetContratosAeroVendas();
 		}
 
 		//Busca de todos os normtativos
-        private async Task GetNomeNormativos()
+        private async Task GetCidades()
         {
-            var pagingResponse = await ViewLogsNormativoRepo.GetNomeNormativo(_viewLogNormativoParameters);
+            var pagingResponse = await ViewAeroVendasHttpRepo.GetCidades(_viewContratoSemAeroVendasParameters);
 
-			ViewNomeNormativoList = pagingResponse.Items;
+			CidadesList = pagingResponse.Items;
             MetaData = pagingResponse.MetaData;
         }
-        private async Task GetLogsNormativo()
+        private async Task GetContratosAeroVendas()
 		{
-			var pagingResponse = await ViewLogsNormativoRepo.GetLogsNormativo(_viewLogNormativoParameters, _nomeNormativoParam);
+			var pagingResponse = await ViewAeroVendasHttpRepo.GetContratosSemAeroVendas(_viewContratoSemAeroVendasParameters, _cidadesParam);
 
-			ViewLogNormativoList = pagingResponse.Items;
+			ViewContratoSemAeroVendas = pagingResponse.Items;
 			MetaData = pagingResponse.MetaData;
 		}
 
 		private async Task SetPageSize(int pageSize)
 		{
-			_viewLogNormativoParameters.PageSize = pageSize;
-			_viewLogNormativoParameters.PageNumber = 1;
+			_viewContratoSemAeroVendasParameters.PageSize = pageSize;
+			_viewContratoSemAeroVendasParameters.PageNumber = 1;
 
-			await GetLogsNormativo();
+			await GetContratosAeroVendas();
 		}
 
 		private async Task SearchChanged(string searchTerm)
 		{
-			_viewLogNormativoParameters.PageNumber = 1;
-			_viewLogNormativoParameters.SearchTerm = searchTerm;
+			_viewContratoSemAeroVendasParameters.PageNumber = 1;
+			_viewContratoSemAeroVendasParameters.SearchTerm = searchTerm;
 
-			await GetLogsNormativo();
+			await GetContratosAeroVendas();
 		}
 
 		private async Task SelectChanged(string searchTerm)
 		{
-			_viewLogNormativoParameters.PageNumber = 1;
-			_nomeNormativoParam.Clear();
-			_nomeNormativoParam.Add("NomeNormativo",searchTerm);
+			_viewContratoSemAeroVendasParameters.PageNumber = 1;
+			_cidadesParam.Clear();
+			_cidadesParam.Add("NomeNormativo",searchTerm);
 
-			await GetLogsNormativo();
+			await GetContratosAeroVendas();
 		}
 		private async Task SortChanged(string orderBy)
 		{
-			_viewLogNormativoParameters.OrderBy = orderBy;
+			_viewContratoSemAeroVendasParameters.OrderBy = orderBy;
 
-			await GetLogsNormativo();
+			await GetContratosAeroVendas();
 		}
         [Inject]
         public IJSRuntime IJSRuntime { get; set; }

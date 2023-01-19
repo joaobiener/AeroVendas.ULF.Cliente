@@ -1,5 +1,4 @@
 using AeroVendas.ULF.Cliente;
-using AeroVendas.ULF.Cliente;
 using AeroVendas.ULF.Cliente.HttpInterceptor;
 using AeroVendas.ULF.Cliente.HttpRepository;
 using Microsoft.AspNetCore.Components.Web;
@@ -8,7 +7,7 @@ using Toolbelt.Blazor.Extensions.DependencyInjection;
 using Entities.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Components.Authorization;
-using Normativo.Cliente.AuthProviders;
+using AeroVendas.ULF.Cliente.AuthProviders;
 
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
@@ -30,7 +29,7 @@ builder.Services.AddScoped(
 
 builder.Services.AddHttpClientInterceptor();
 
-builder.Services.AddScoped<IViewLogNormativoHttpRepository, ViewLogNormativoHttpRepository>();
+builder.Services.AddScoped<IViewAeroVendasHttpRepository, ViewAeroVendasHttpRepository>();
 
 builder.Services.AddScoped<HttpInterceptorService>();
 
