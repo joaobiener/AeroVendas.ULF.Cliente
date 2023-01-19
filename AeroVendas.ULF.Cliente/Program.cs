@@ -17,7 +17,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 
 
-builder.Services.AddHttpClient("LogsNormativoAPI", (sp, cl) =>
+builder.Services.AddHttpClient("AeroVendasPI", (sp, cl) =>
 {
 	var apiConfiguration = sp.GetRequiredService<IOptions<ApiConfiguration>>();
 	cl.BaseAddress = new Uri(apiConfiguration.Value.BaseAddress); //Development
@@ -25,7 +25,7 @@ builder.Services.AddHttpClient("LogsNormativoAPI", (sp, cl) =>
 });
 
 builder.Services.AddScoped(
-	sp => sp.GetService<IHttpClientFactory>().CreateClient("LogsNormativoAPI"));
+	sp => sp.GetService<IHttpClientFactory>().CreateClient("AeroVendasPI"));
 
 builder.Services.AddHttpClientInterceptor();
 
