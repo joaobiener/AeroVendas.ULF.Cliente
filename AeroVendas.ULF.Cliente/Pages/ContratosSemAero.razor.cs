@@ -1,4 +1,4 @@
-﻿using Normativo.Cliente.HttpInterceptor;
+﻿using AeroVendas.ULF.Cliente.HttpInterceptor;
 using Normativo.Cliente.HttpRepository;
 using Entities.Models;
 using Shared.RequestFeatures;
@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
 
-namespace Normativo.Cliente.Pages
+namespace AeroVendas.ULF.Cliente.Pages
 {
 	public partial class ReportNormativos : IDisposable
 	{

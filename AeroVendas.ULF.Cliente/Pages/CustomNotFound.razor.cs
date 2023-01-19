@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 
-namespace Normativo.Cliente.Pages
+namespace AeroVendas.ULF.Cliente.Pages
 {
     public partial class CustomNotFound
 	{
