@@ -1,0 +1,51 @@
+﻿@if (viewAeroVendas.Any())
+{
+
+	<table class="table table-success table-hover shadow">
+		<thead>
+			<tr>
+				<th scope="col">Matrícula</th>
+				<th scope="col">Colaborador</th>
+				<th scope="col">Gerência</th>
+				<th scope="col">Coordenação</th>
+				<th scope="col">Normativo</th>
+				<th scope="col">Data de Aceite</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var viewLogNormativo in viewAeroVendas)
+			{
+				<tr >
+					<td class="align-middle small">
+						@viewLogNormativo.Matricula
+					</td>
+					<td class="align-middle small">
+						<small>@viewLogNormativo.NomeFuncionario</small>
+					</td>
+					<td class="align-middle small">
+						<small>@viewLogNormativo.NomeGerencia</small>
+					</td>
+					<td class="align-middle small">
+						<small>@viewLogNormativo.NomeCoordenacao</small>
+					</td>
+					<td class="align-middle small">
+						<small><a href="http://intranet.niteroi.unimed/sites/Unimed/Normativos/SitePages/Normativo.aspx?NewsId=@viewLogNormativo.IdNormativo" target="_blank">@viewLogNormativo.NomeNormativo</a></small>
+					</td>
+					<td class="align-middle small">
+						<small>@viewLogNormativo.DataLeitura</small>
+					</td>
+
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+else
+{
+	<div class="text-center">
+		<button class="btn btn-success" type="button" disabled>
+			<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+			Carregando...
+		</button>
+	</div>
+}

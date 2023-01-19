@@ -1,0 +1,40 @@
+﻿
+@page {
+    size: landscape;
+   
+    margin:  2cm 0cm 2cm 0cm; 
+}
+
+@page:first {
+    margin: 1cm 0cm 2cm 0cm;
+}
+
+
+@page {
+    @bottom-left {
+        content: 'Página ' counter(page) ' de ' counter(pages);
+    }
+}
+/*
+body {
+    counter-reset: page;
+} 
+
+#content {
+    display:table;
+}
+
+#pageFooter {
+    display: table-footer-group;
+    counter-increment: page;
+}
+    #pageFooter:after {
+        content: "Página " counter(page);
+        left: 0;
+        top: 100%;
+        white-space: nowrap;
+        z-index: 20;
+        -moz-border-radius: 5px;
+        -moz-box-shadow: 0px 0px 4px #222;
+        background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    }*/

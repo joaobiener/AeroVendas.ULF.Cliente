@@ -1,0 +1,23 @@
+﻿@page "/"
+@page "/index"
+@using AeroVendas.ULF.Cliente
+
+<PageTitle>Index</PageTitle>
+
+<Home Title="Aero Vendas Unimed Leste Fluminense"
+	  @attributes="AdditionalAttributes">
+	<InformacoesAdicionaisContent>
+		Aqui você pode pesquisar os logs de acesso aos Normativos e Politicas 
+		da Unimed Leste Fluminense!
+	</InformacoesAdicionaisContent>
+</Home>
+
+@code
+{
+	public Dictionary<string, object> AdditionalAttributes { get; set; } =
+		new Dictionary<string, object>
+		{
+			{ "src", "assets/AeroVendas.jpg" },
+			{ "alt", "Aero Vendas" }
+		};
+}

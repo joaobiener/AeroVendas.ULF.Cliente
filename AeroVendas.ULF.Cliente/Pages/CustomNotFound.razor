@@ -1,0 +1,40 @@
+﻿@page "/404"
+
+
+<div class="card text-center">
+	<div class="card-header">
+		<h2 class="card-title btn-outline-success">Página não encontrada!</h2>
+	</div>
+	<div class="card-body">
+		<img style="width:60%" src="assets/404.jpg" alt="" />
+		<h2 class="card-title btn-outline-success"></h2>
+		
+		<button type="button" class="btn btn-success"
+				@onclick="NavigateToHome">
+			Voltar
+		</button>
+	</div>
+
+</div>
+
+@*<div class="card">
+	<div class="card-body customNotFound">
+		<div class="row">
+			<div class="col btn-success" role="alert">
+				Página não encontrada!
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col text-md-center m-5 text-primary">
+		<button type="button" class="btn btn-success" 
+				@onclick="NavigateToHome">Voltar</button>
+	</div>
+</div>
+*@@*<div class="row">
+	<div class="col">
+		If you want, you can report this error by clicking the following link: 
+		<a href="/reportError/404/The page is missing">Report an error</a>
+	</div>
+</div>*@

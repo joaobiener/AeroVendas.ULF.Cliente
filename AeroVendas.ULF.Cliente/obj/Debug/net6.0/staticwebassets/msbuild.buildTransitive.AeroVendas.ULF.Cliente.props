@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\AeroVendas.ULF.Cliente.props" />
+</Project>

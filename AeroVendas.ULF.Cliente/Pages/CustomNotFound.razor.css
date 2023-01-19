@@ -1,0 +1,9 @@
+﻿.customNotFound {
+	text-align: center;
+	color: red;
+	font-size: 35px;
+	height:800px;
+	box-shadow: 1px 1px 1px grey;
+	background-image: url("assets/404.jpg");
+	background-repeat: no-repeat;
+}
