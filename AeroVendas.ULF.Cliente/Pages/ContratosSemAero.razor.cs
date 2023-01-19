@@ -47,10 +47,19 @@ namespace AeroVendas.ULF.Cliente.Pages
 		//Busca de todos os normtativos
         private async Task GetCidades()
         {
-            var pagingResponse = await ViewAeroVendasHttpRepo.GetCidades(_viewContratoSemAeroVendasParameters);
+            //Não irei fazer chamada na API pela demora. Irei inicializar a lista de Cidades 
+            CidadesList.Add("ITABORAÍ");
+            CidadesList.Add("MARICÁ");
+            CidadesList.Add("NITERÓI");
+            CidadesList.Add("RIO BONITO");
+            CidadesList.Add("SÃO GONÇALO");
+            CidadesList.Add("SILVA JARDIM");
+            CidadesList.Add("TANGUÁ");
+            CidadesList.Add("OUTROS");
+            //         var pagingResponse = await ViewAeroVendasHttpRepo.GetCidades(_viewContratoSemAeroVendasParameters);
 
-			CidadesList = pagingResponse.Items;
-            MetaData = pagingResponse.MetaData;
+            //CidadesList = pagingResponse.Items;
+            //         MetaData = pagingResponse.MetaData;
         }
         private async Task GetContratosAeroVendas()
 		{
