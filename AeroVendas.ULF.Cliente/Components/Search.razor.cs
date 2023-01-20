@@ -16,7 +16,7 @@ namespace AeroVendas.ULF.Cliente.Components
 			if (_timer != null)
 				_timer.Dispose();
 
-			_timer = new Timer(OnTimerElapsed, null, 500, 0);
+			_timer = new Timer(OnTimerElapsed, null, 1000, 0);
 		}
 
 		private void OnTimerElapsed(object sender)

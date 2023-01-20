@@ -10,6 +10,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 {
 	public partial class ContratosSemAero : IDisposable
 	{
+		public bool Aguardando = false;
 		public List<ViewContratoSemAeroVendas> ListContratoSemAeroVendas { get; set; } = new List<ViewContratoSemAeroVendas>();
 
 		public List<string> CidadesList { get; set; } = new List<string>();
@@ -64,10 +65,13 @@ namespace AeroVendas.ULF.Cliente.Pages
         }
         private async Task GetContratosAeroVendas()
 		{
+			Aguardando = true;
+			ListContratoSemAeroVendas.Clear();
 			var pagingResponse = await ViewAeroVendasHttpRepo.GetContratosSemAeroVendas(_viewContratoSemAeroVendasParameters, _cidadesParam);
 
             ListContratoSemAeroVendas = pagingResponse.Items;
 			MetaData = pagingResponse.MetaData;
+			Aguardando = false;
 		}
 
 		private async Task SetPageSize(int pageSize)
@@ -88,7 +92,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 
 		private async Task SelectCidadeChanged(string searchTerm)
 		{
-
+			
 			_viewContratoSemAeroVendasParameters.PageNumber = 1;
 			_cidadesParam.Clear();
 			_cidadesParam.Add("Cidade", searchTerm);
