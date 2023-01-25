@@ -1,0 +1,75 @@
+﻿@page "/register"
+<h3>Create Account</h3>
+
+@if (ShowRegistrationErrors)
+{
+	<div class="alert alert-danger" role="alert">
+		@foreach (var error in Errors)
+		{
+			<p>@error</p>
+		}
+	</div>
+}
+
+<EditForm Model="_userForRegistration" OnValidSubmit="Register"  class="card card-body bg-light mt-5">
+	<DataAnnotationsValidator />
+	<div class="mb-3 row">
+		<label for="firstname" class="col-md-2 col-form-label">Primeiro Nome:</label>
+		<div class="col-md-10">
+			<InputText id="firstName" class="form-control"
+					   @bind-Value="_userForRegistration.FirstName" />
+			<ValidationMessage For="@(() => _userForRegistration.FirstName)" />
+		</div>
+	</div>
+
+	<div class="mb-3 row">
+		<label for="lastname" class="col-md-2 col-form-label">Último Nome:</label>
+		<div class="col-md-10">
+			<InputText id="lastname" class="form-control"
+					   @bind-Value="_userForRegistration.LastName" />
+			<ValidationMessage For="@(() => _userForRegistration.LastName)" />
+		</div>
+	</div>
+
+	<div class="mb-3 row">
+		<label for="username" class="col-md-2 col-form-label">Lgon:</label>
+		<div class="col-md-10">
+			<InputText id="username" class="form-control"
+					   @bind-Value="_userForRegistration.UserName" />
+			<ValidationMessage For="@(() => _userForRegistration.UserName)" />
+		</div>
+	</div>
+
+	<div class="mb-3 row">
+		<label for="email" class="col-md-2 col-form-label">Email:</label>
+		<div class="col-md-10">
+			<InputText id="email" class="form-control"
+					   @bind-Value="_userForRegistration.Email" />
+			<ValidationMessage For="@(() => _userForRegistration.Email)" />
+		</div>
+	</div>
+
+	<div class="mb-3 row">
+		<label for="password" class="col-md-2 col-form-label">Password:</label>
+		<div class="col-md-10">
+			<InputText id="password" class="form-control"
+					   @bind-Value="_userForRegistration.Password" />
+			<ValidationMessage For="@(() => _userForRegistration.Password)" />
+		</div>
+	</div>
+	<div class="mb-3 row">
+		<label for="telefone" class="col-md-2 col-form-label">Telefone:</label>
+		<div class="col-md-10">
+			<InputText id="telefone" class="form-control"
+					   @bind-Value="_userForRegistration.PhoneNumber" />
+			<ValidationMessage For="@(() => _userForRegistration.PhoneNumber)" />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<button type="submit" class="btn btn-success float-end">Registrar</button>
+		</div>
+	</div>
+</EditForm>
+
