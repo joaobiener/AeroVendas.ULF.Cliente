@@ -1,12 +1,31 @@
 {
   "Version": 1,
-  "Hash": "w2567EPRbI3MopDLCX1i7n2blU8JBHPgIj73Rj5q8Qc=",
+  "Hash": "FMBnBWD9IdiFuuoBilw3ZbnlmXmItFf5It9Jo8GBFso=",
   "Source": "AeroVendas.ULF.Cliente",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\AeroVendas.ULF.Cliente.Toastr.csproj",
+      "Version": 2,
+      "Source": "AeroVendas.ULF.Cliente.Toastr",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
   "DiscoveryPatterns": [
+    {
+      "Name": "AeroVendas.ULF.Cliente.Toastr\\wwwroot",
+      "Source": "AeroVendas.ULF.Cliente.Toastr",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\",
+      "BasePath": "_content/AeroVendas.ULF.Cliente.Toastr",
+      "Pattern": "**"
+    },
     {
       "Name": "AeroVendas.ULF.Cliente\\wwwroot",
       "Source": "AeroVendas.ULF.Cliente",
@@ -16,6 +35,74 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\jquery-3.5.1.min.js",
+      "SourceId": "AeroVendas.ULF.Cliente.Toastr",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\",
+      "BasePath": "_content/AeroVendas.ULF.Cliente.Toastr",
+      "RelativePath": "jquery-3.5.1.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery-3.5.1.min.js"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\toastr.min.css",
+      "SourceId": "AeroVendas.ULF.Cliente.Toastr",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\",
+      "BasePath": "_content/AeroVendas.ULF.Cliente.Toastr",
+      "RelativePath": "toastr.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\toastr.min.css"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\toastr.min.js",
+      "SourceId": "AeroVendas.ULF.Cliente.Toastr",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\",
+      "BasePath": "_content/AeroVendas.ULF.Cliente.Toastr",
+      "RelativePath": "toastr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\toastr.min.js"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\toastrWrapper.js",
+      "SourceId": "AeroVendas.ULF.Cliente.Toastr",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\",
+      "BasePath": "_content/AeroVendas.ULF.Cliente.Toastr",
+      "RelativePath": "toastrWrapper.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\toastrWrapper.js"
+    },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AeroVendas.ULF.Cliente.dll",
       "SourceId": "AeroVendas.ULF.Cliente",
@@ -49,6 +136,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net6.0\\AeroVendas.ULF.Cliente.pdb"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AeroVendas.ULF.Cliente.Toastr.dll",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AeroVendas.ULF.Cliente.Toastr.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\bin\\Debug\\net6.0\\AeroVendas.ULF.Cliente.Toastr.dll"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AeroVendas.ULF.Cliente.Toastr.pdb",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AeroVendas.ULF.Cliente.Toastr.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\bin\\Debug\\net6.0\\AeroVendas.ULF.Cliente.Toastr.pdb"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
@@ -116,7 +237,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\3.2.2\\lib\\netstandard2.1\\Blazored.Toast.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\4.0.0\\lib\\net6.0\\Blazored.Toast.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.12.1wms6qxvie.js",
@@ -320,7 +441,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.12\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.Policy.dll",
@@ -371,7 +492,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.12\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -388,7 +509,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.12\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
@@ -405,7 +526,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.12\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
@@ -609,7 +730,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.12\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Mvc.Abstractions.dll",
@@ -949,7 +1070,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyModel.dll",
@@ -1102,7 +1223,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.3\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Configuration.dll",
@@ -1221,7 +1342,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.jsinterop\\6.0.3\\lib\\net6.0\\Microsoft.JSInterop.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.jsinterop\\6.0.12\\lib\\net6.0\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
@@ -2258,7 +2379,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\system.io.pipelines\\6.0.2\\lib\\net6.0\\System.IO.Pipelines.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\system.io.pipelines\\6.0.3\\lib\\net6.0\\System.IO.Pipelines.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.dll",
@@ -4454,6 +4575,23 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authentication.Core.dll"
     },
     {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\3X61LQBC.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
+    },
+    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\3ZGTJkWT.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -4503,6 +4641,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Shared.dll"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\4vjW4y7O.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\50pi32l8.gz",
@@ -4709,23 +4864,6 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Formatters.dll"
     },
     {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\7004jpAK.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
-    },
-    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\7GEmYsCs.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -4845,6 +4983,23 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.FileSystem.dll"
     },
     {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\8YotKDdJ.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.Toast.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll"
+    },
+    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\8ZdSv+4+.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -4911,23 +5066,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.timezones.blat"
-    },
-    {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\9RnmW38t.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\a0BegvWd.gz",
@@ -5100,6 +5238,40 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll"
     },
     {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\AteVHRRA.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\atw6FKON.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\AVuf6Gvf.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -5183,23 +5355,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.dll"
-    },
-    {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\bAY2KmFc.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\Bck1IjbX.gz",
@@ -5610,23 +5765,6 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ServiceModel.Web.dll"
     },
     {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\eSFPeo56.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Blazored.Toast.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll"
-    },
-    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\EwaV+MiM.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -5916,6 +6054,23 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.DataSetExtensions.dll"
     },
     {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\hLts+cGL.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AeroVendas.ULF.Cliente.Toastr.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AeroVendas.ULF.Cliente.Toastr.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AeroVendas.ULF.Cliente.Toastr.dll"
+    },
+    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\HN+U0Xzf.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -6188,6 +6343,57 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll"
     },
     {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\JWPffADG.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\JXaaWfHp.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AeroVendas.ULF.Cliente.Toastr.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AeroVendas.ULF.Cliente.Toastr.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\AeroVendas.ULF.Cliente.Toastr.pdb"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\Jy30kMtK.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
+    },
+    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\k+G9qvQg.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -6203,23 +6409,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Primitives.dll"
-    },
-    {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\K1A7mIR7.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\k2efwYH2.gz",
@@ -6477,6 +6666,23 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.OpenSsl.dll"
     },
     {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\lQRsakk3.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
+    },
+    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\LViLNfSD.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -6492,23 +6698,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.DiagnosticSource.dll"
-    },
-    {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\m5xTjG7E.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\MaeBJtV0.gz",
@@ -6662,23 +6851,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.Policy.dll"
-    },
-    {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\Ng9u9bCX.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\nGHf3OTr.gz",
@@ -6987,23 +7159,6 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XPath.XDocument.dll"
     },
     {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\PsgmnIb6.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
-    },
-    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\PU3qSmcw.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -7053,6 +7208,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.dll"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\QDhrtbI8.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\QfXhs7uH.gz",
@@ -7259,6 +7431,23 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll"
     },
     {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\sbNWPxgE.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
+    },
+    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\sfNU+qVz.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -7427,23 +7616,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.Lightweight.dll"
-    },
-    {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\tSXQIrW4.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\TvTy7YGc.gz",
@@ -7665,23 +7837,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Toolbelt.Blazor.HttpClientInterceptor.dll"
-    },
-    {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\WmKBxea7.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\Wpj88El+.gz",
@@ -30396,12 +30551,12 @@
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
     },
     {
-      "Identity": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\blazored-toast.css",
-      "SourceId": "Blazored.Toast",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\",
-      "BasePath": "_content/Blazored.Toast",
-      "RelativePath": "blazored-toast.css",
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\scripts\\jsExamples.js",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "scripts/jsExamples.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30410,15 +30565,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\blazored-toast.css"
+      "OriginalItemSpec": "wwwroot\\scripts\\jsExamples.js"
     },
     {
-      "Identity": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\blazored-toast.min.css",
-      "SourceId": "Blazored.Toast",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\",
-      "BasePath": "_content/Blazored.Toast",
-      "RelativePath": "blazored-toast.min.css",
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\scripts\\jsExamples2.js",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "scripts/jsExamples2.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30427,7 +30582,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\blazored-toast.min.css"
+      "OriginalItemSpec": "wwwroot\\scripts\\jsExamples2.js"
+    },
+    {
+      "Identity": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\4.0.0\\staticwebassets\\Blazored.Toast.bundle.scp.css",
+      "SourceId": "Blazored.Toast",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\4.0.0\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Toast",
+      "RelativePath": "Blazored.Toast.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\4.0.0\\staticwebassets\\Blazored.Toast.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.3\\staticwebassets\\AuthenticationService.js",

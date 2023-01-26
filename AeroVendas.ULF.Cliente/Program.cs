@@ -1,6 +1,9 @@
+using Blazored.LocalStorage;
+using Blazored.Toast;
 using AeroVendas.ULF.Cliente;
 using AeroVendas.ULF.Cliente.HttpInterceptor;
 using AeroVendas.ULF.Cliente.HttpRepository;
+using AeroVendas.ULF.Cliente.Toastr.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Toolbelt.Blazor.Extensions.DependencyInjection;
@@ -8,7 +11,7 @@ using Entities.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Components.Authorization;
 using AeroVendas.ULF.Cliente.AuthProviders;
-using Blazored.LocalStorage;
+
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -24,6 +27,7 @@ builder.Services.AddHttpClient("AeroVendasPI", (sp, cl) =>
 	cl.EnableIntercept(sp);
 });
 
+builder.Services.AddBlazoredToast();
 builder.Services.AddScoped(
 	sp => sp.GetService<IHttpClientFactory>().CreateClient("AeroVendasPI"));
 
@@ -36,6 +40,7 @@ builder.Services.AddScoped<HttpInterceptorService>();
 builder.Services.Configure<ApiConfiguration>
 		(builder.Configuration.GetSection("ApiConfiguration"));
 
+builder.Services.AddBlazorToastr();
 builder.Services.AddBlazoredLocalStorage();
 
 builder.Services.AddAuthorizationCore();

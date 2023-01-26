@@ -15,7 +15,7 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\6.0.3\build\net6.0\Microsoft.AspNetCore.Components.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\6.0.3\build\net6.0\Microsoft.AspNetCore.Components.WebAssembly.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.authentication\6.0.3\buildTransitive\Microsoft.AspNetCore.Components.WebAssembly.Authentication.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.authentication\6.0.3\buildTransitive\Microsoft.AspNetCore.Components.WebAssembly.Authentication.props')" />
-    <Import Project="$(NuGetPackageRoot)blazored.toast\3.2.2\buildTransitive\Blazored.Toast.props" Condition="Exists('$(NuGetPackageRoot)blazored.toast\3.2.2\buildTransitive\Blazored.Toast.props')" />
+    <Import Project="$(NuGetPackageRoot)blazored.toast\4.0.0\buildTransitive\Blazored.Toast.props" Condition="Exists('$(NuGetPackageRoot)blazored.toast\4.0.0\buildTransitive\Blazored.Toast.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\jpedrosup\.nuget\packages\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>

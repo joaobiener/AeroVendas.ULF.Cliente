@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\jquery-3.5.1.min.js",
+      "PackagePath": "staticwebassets\\jquery-3.5.1.min.js"
+    },
+    {
+      "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\toastr.min.css",
+      "PackagePath": "staticwebassets\\toastr.min.css"
+    },
+    {
+      "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\toastr.min.js",
+      "PackagePath": "staticwebassets\\toastr.min.js"
+    },
+    {
+      "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\toastrWrapper.js",
+      "PackagePath": "staticwebassets\\toastrWrapper.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.AeroVendas.ULF.Cliente.Toastr.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.AeroVendas.ULF.Cliente.Toastr.props",
+      "PackagePath": "build\\AeroVendas.ULF.Cliente.Toastr.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.AeroVendas.ULF.Cliente.Toastr.props",
+      "PackagePath": "buildMultiTargeting\\AeroVendas.ULF.Cliente.Toastr.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.AeroVendas.ULF.Cliente.Toastr.props",
+      "PackagePath": "buildTransitive\\AeroVendas.ULF.Cliente.Toastr.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

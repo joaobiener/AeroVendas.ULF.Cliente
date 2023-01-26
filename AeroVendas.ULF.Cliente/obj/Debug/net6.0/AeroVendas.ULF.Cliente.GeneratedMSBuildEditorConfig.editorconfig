@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tVW5hdXRob3JpemVkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/JSInterop.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSlNJbnRlcm9wLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/ServerError.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmVyRXJyb3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/ToastrWrapper.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9hc3RyV3JhcHBlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Shared/SurveyPrompt.razor]
@@ -103,6 +111,10 @@ build_metadata.AdditionalFiles.CssScope = b-1nw1yyp3ri
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qdqmij07tl
+
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/JSInterop2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSlNJbnRlcm9wMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8cl442l9pj
 
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

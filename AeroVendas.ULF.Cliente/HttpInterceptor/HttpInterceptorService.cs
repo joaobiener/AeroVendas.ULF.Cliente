@@ -1,4 +1,5 @@
-﻿using AeroVendas.ULF.Cliente.HttpRepository;
+﻿using AeroVendas.ULF.Cliente.HttpInterceptor;
+using AeroVendas.ULF.Cliente.HttpRepository;
 using Blazored.Toast.Services;
 using Microsoft.AspNetCore.Components;
 using System.Net;
