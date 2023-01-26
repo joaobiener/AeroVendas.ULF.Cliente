@@ -173,6 +173,12 @@ body {
 	text-align: center;
 	font-size: 20px;
 }
+/* /Pages/Login.razor.rz.scp.css */
+.toast-top-center[b-q1ybpv6szd] {
+    top: 12px;
+    margin: 0 auto;
+    left: 50%;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-s3epnszf9b] {
     position: relative;

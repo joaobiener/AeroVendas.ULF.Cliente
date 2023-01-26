@@ -239,10 +239,10 @@
       "mscorlib.dll": "sha256-AtjrcSyN9gleNjzHPZRVJVh6sNEX1FxRBHN\/ZN6Yt3Q=",
       "netstandard.dll": "sha256-\/CRbZZ6en3BoMsR5fhsJCTE9TYhik+E7KU+O9cBdC9c=",
       "System.Private.CoreLib.dll": "sha256-ftEeXsH4HQ3J6VlVJuI3mbfqZxGyNtYVxuIQD\/8waHw=",
-      "AeroVendas.ULF.Cliente.Toastr.dll": "sha256-s0Nnk2z6Pri8BQjI1AEnZDRqzhk+bXJ+VseOCwRP7HI=",
+      "AeroVendas.ULF.Cliente.Toastr.dll": "sha256-1tQQh\/GOKR4DJGSyIbmo\/VpiE0aVhh7ZjN0M2bIT7lY=",
       "Entities.dll": "sha256-EVbRFpENXgDhfe49BVBmeqnzxRxLHXr5mCWNglcSRFk=",
       "Shared.dll": "sha256-16TIv6BnmiWLsl6a9nQE5QEvjrtIXcuN\/gLainlBGRQ=",
-      "AeroVendas.ULF.Cliente.dll": "sha256-zfvlI92uhoEewXjqcmB3C54NrBBWzQCvHtXe0JSlXEY="
+      "AeroVendas.ULF.Cliente.dll": "sha256-\/muGW4KKp+wTINEIrM+w1i\/lRckD4M1GfaBjMJarpQc="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -250,8 +250,8 @@
     "pdb": {
       "Entities.pdb": "sha256-dCOSqy9taJT3MBjlzxT9l36GiMAPejHoEXKIsmWPFdE=",
       "Shared.pdb": "sha256-sNPHqz47iCWaeeVjafcfeveRKbvOiviFjFVkO7HuU8E=",
-      "AeroVendas.ULF.Cliente.Toastr.pdb": "sha256-yAQvusEWBJrlWHvtO80KjsFQ6bO9V6KHlob8BgHz2zo=",
-      "AeroVendas.ULF.Cliente.pdb": "sha256-2Qa9iVSka\/GS2fTRLe8LFsdpDqnIYRhV547BwcTeuyo="
+      "AeroVendas.ULF.Cliente.Toastr.pdb": "sha256-9D\/wDyhoGt5vWmWPRO32xgwZ3cCFp\/xowzQdxbno1QY=",
+      "AeroVendas.ULF.Cliente.pdb": "sha256-Mx43HEwyRLaJff\/WCtK+I6saD0ohQSrHmV3c\/a6O5Mo="
     },
     "runtime": {
       "dotnet.6.0.12.1wms6qxvie.js": "sha256-qD0QxS71qYTQZMj+JDk0IXr28ewa+pSDzShFKSNkQ+0=",

@@ -1008,3 +1008,4 @@ C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\hLts+cGL.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\JXaaWfHp.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\scopedcss\Pages\JSInterop2.razor.rz.scp.css
+C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\scopedcss\Pages\Login.razor.rz.scp.css
