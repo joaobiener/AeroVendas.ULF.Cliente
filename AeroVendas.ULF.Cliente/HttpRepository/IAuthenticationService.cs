@@ -6,8 +6,8 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
     public interface IAuthenticationService
 	{
 		Task<ResponseDto> RegisterUser(UserForRegistrationDto userForRegistrationDto);
-//		Task<IActionResult> Login(UserForAuthenticationDto userForAuthentication);
-//		Task Logout();
-//		Task<string> RefreshToken();
+		Task<AuthResponseDto> Login(UserForAuthenticationDto userForAuthentication);
+		Task Logout();
+		Task<string> RefreshToken();
 	}
 }

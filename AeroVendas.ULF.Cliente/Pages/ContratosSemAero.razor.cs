@@ -4,7 +4,7 @@ using Entities.Models;
 using Shared.RequestFeatures;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
-
+using Blazored.Toast.Services;
 
 namespace AeroVendas.ULF.Cliente.Pages
 {
@@ -25,14 +25,15 @@ namespace AeroVendas.ULF.Cliente.Pages
 		[Inject]
 		public IViewAeroVendasHttpRepository? ViewAeroVendasHttpRepo { get; set; }
 
-
-
-        [Inject]
+	
+		[Inject]
 		public HttpInterceptorService? Interceptor { get; set; }
+
 
 		protected async override Task OnInitializedAsync()
 		{
 			Interceptor.RegisterEvent();
+			Interceptor.RegisterBeforeSendEvent();
 			await GetCidades();
 			await GetContratosAeroVendas();
 
@@ -113,6 +114,6 @@ namespace AeroVendas.ULF.Cliente.Pages
             await IJSRuntime.InvokeVoidAsync("Print", "Inprime Relatório");
         }
 
-        public void Dispose() => Interceptor.DisposeEvent();
+		public void Dispose() => Interceptor.DisposeEvent();
 	}
 }

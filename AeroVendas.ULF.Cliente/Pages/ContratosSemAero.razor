@@ -2,7 +2,7 @@
 @using AeroVendas.ULF.Cliente.Components
 @using Microsoft.AspNetCore.Authorization
 
-@attribute [Authorize]
+@attribute [Authorize(Roles = "Administrator,AeroAdmin")]
 
 
 <div id="content">

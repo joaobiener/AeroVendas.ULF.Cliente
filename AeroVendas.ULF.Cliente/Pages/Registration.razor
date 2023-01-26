@@ -1,5 +1,5 @@
 ﻿@page "/register"
-<h3>Create Account</h3>
+<h3>Criar conta</h3>
 
 @if (ShowRegistrationErrors)
 {
@@ -52,7 +52,7 @@
 	<div class="mb-3 row">
 		<label for="password" class="col-md-2 col-form-label">Password:</label>
 		<div class="col-md-10">
-			<InputText id="password" class="form-control"
+			<InputText id="password" class="form-control" type="password" placeholder="Password"
 					   @bind-Value="_userForRegistration.Password" />
 			<ValidationMessage For="@(() => _userForRegistration.Password)" />
 		</div>

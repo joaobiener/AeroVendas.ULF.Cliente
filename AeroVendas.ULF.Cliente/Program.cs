@@ -8,6 +8,7 @@ using Entities.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Components.Authorization;
 using AeroVendas.ULF.Cliente.AuthProviders;
+using Blazored.LocalStorage;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -35,9 +36,11 @@ builder.Services.AddScoped<HttpInterceptorService>();
 builder.Services.Configure<ApiConfiguration>
 		(builder.Configuration.GetSection("ApiConfiguration"));
 
+builder.Services.AddBlazoredLocalStorage();
 
 builder.Services.AddAuthorizationCore();
-builder.Services.AddScoped<AuthenticationStateProvider, TestAuthStateProvider>();
+builder.Services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<RefreshTokenService, RefreshTokenService>();
 builder.Services.AddScoped<IViewAeroVendasHttpRepository, ViewAeroVendasHttpRepository>();
 await builder.Build().RunAsync();
