@@ -242,7 +242,7 @@
       "AeroVendas.ULF.Cliente.Toastr.dll": "sha256-s0Nnk2z6Pri8BQjI1AEnZDRqzhk+bXJ+VseOCwRP7HI=",
       "Entities.dll": "sha256-EVbRFpENXgDhfe49BVBmeqnzxRxLHXr5mCWNglcSRFk=",
       "Shared.dll": "sha256-16TIv6BnmiWLsl6a9nQE5QEvjrtIXcuN\/gLainlBGRQ=",
-      "AeroVendas.ULF.Cliente.dll": "sha256-tTWlKuCV6ioqOmpXt5E6HTdYdWK05kEd27LTn\/WU3jo="
+      "AeroVendas.ULF.Cliente.dll": "sha256-zfvlI92uhoEewXjqcmB3C54NrBBWzQCvHtXe0JSlXEY="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -251,7 +251,7 @@
       "Entities.pdb": "sha256-dCOSqy9taJT3MBjlzxT9l36GiMAPejHoEXKIsmWPFdE=",
       "Shared.pdb": "sha256-sNPHqz47iCWaeeVjafcfeveRKbvOiviFjFVkO7HuU8E=",
       "AeroVendas.ULF.Cliente.Toastr.pdb": "sha256-yAQvusEWBJrlWHvtO80KjsFQ6bO9V6KHlob8BgHz2zo=",
-      "AeroVendas.ULF.Cliente.pdb": "sha256-5TlWzRQU98VWsUv6yOEP4BpDJ4cCPvGtpdSb4\/9WTa0="
+      "AeroVendas.ULF.Cliente.pdb": "sha256-2Qa9iVSka\/GS2fTRLe8LFsdpDqnIYRhV547BwcTeuyo="
     },
     "runtime": {
       "dotnet.6.0.12.1wms6qxvie.js": "sha256-qD0QxS71qYTQZMj+JDk0IXr28ewa+pSDzShFKSNkQ+0=",

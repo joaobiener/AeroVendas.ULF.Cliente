@@ -45,7 +45,9 @@ builder.Services.AddBlazoredLocalStorage();
 
 builder.Services.AddAuthorizationCore();
 builder.Services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();
+
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<RefreshTokenService, RefreshTokenService>();
-builder.Services.AddScoped<IViewAeroVendasHttpRepository, ViewAeroVendasHttpRepository>();
+
+
 await builder.Build().RunAsync();
