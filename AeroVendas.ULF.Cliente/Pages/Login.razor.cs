@@ -28,6 +28,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 
 			var options = new ToastrOptions
 			{
+				
 				CloseButton = true,
 				HideDuration = 300,
 				HideMethod = ToastrHideMethod.SlideUp,
