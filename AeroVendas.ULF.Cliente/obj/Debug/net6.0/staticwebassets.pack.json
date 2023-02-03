@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\AeroVendas.ULF.Cliente.styles.css"
     },
     {
+      "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
       "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\appsettings.Production.json",
       "PackagePath": "staticwebassets\\appsettings.Production.json"
     },

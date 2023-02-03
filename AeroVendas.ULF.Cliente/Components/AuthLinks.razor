@@ -1,19 +1,39 @@
 ﻿<AuthorizeView>
 	<Authorized>
-		Olá, @context.User.Identity.Name!
 
-		<a href="Logout">Log out</a>
+		Olá, @GetDetalhes(@context.User.Identity.Name)
+
+			<a href="Logout" class="btn btn-danger dropdown-toggle mr-4">Logout</a>
+		
 
 	</Authorized>
 
 	<NotAuthorized>
-		<a href="Login">Log in</a>
+		<a href="Login" class="btn btn-secondary dropdown-toggle mr-4">Login</a>
+
 	</NotAuthorized>
 </AuthorizeView>
 <AuthorizeView Roles="Administrator">
 	<Authorized>
 
-		<a href="Register">Registrar</a>
+		<a class="btn btn-primary dropdown-toggle sign-up-btn" href="Register">Registrar</a>
 
 	</Authorized>
 </AuthorizeView>
+
+@code{
+
+		
+
+	private string GetDetalhes(string identName )
+	{
+		char[] chavetas = { '[', ']' ,'"'};
+		string identSemChaves = identName.Replace("[", string.Empty).Replace("]", string.Empty).Replace("\"", string.Empty);
+
+		
+		string[] arrIdent = identSemChaves.Split(",");
+
+
+		return arrIdent[1] + " " + arrIdent[2];
+	}
+}

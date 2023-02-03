@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FMBnBWD9IdiFuuoBilw3ZbnlmXmItFf5It9Jo8GBFso=",
+  "Hash": "ZvRFE2uvTuXg5KXChbMJBROmsbqcU59RI3fucFd7IKE=",
   "Source": "AeroVendas.ULF.Cliente",
   "BasePath": "/",
   "Mode": "Root",
@@ -8449,6 +8449,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AeroVendas.ULF.Cliente.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\appsettings.Development.json",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "appsettings.Development.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "settings",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\appsettings.Development.json"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\appsettings.json",
