@@ -41,8 +41,17 @@ namespace AeroVendas.ULF.Cliente.HttpInterceptor
 
 			if (!absolutePath.Contains("token") && !absolutePath.Contains("account"))
 			{
-				var token = await _refreshTokenService.TryRefreshToken();
-				if (!string.IsNullOrEmpty(token))
+				var token = "";
+
+                try { 
+					token = await _refreshTokenService.TryRefreshToken();
+                }
+				catch (Exception ex)  
+				{ 
+
+				}
+
+                if (!string.IsNullOrEmpty(token))
 				{
 					e.Request.Headers.Authorization =
 						new AuthenticationHeaderValue("bearer", token);

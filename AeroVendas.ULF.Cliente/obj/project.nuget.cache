@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LdI3ECs6W3QnJUEFc7bwTt2+JxWoLhIBR4vHdeVkRn3vVUXQt++wSN7ijVGt7d0q84j604vZSA0g3wsgetLJ4w==",
+  "dgSpecHash": "0ymcxfKEzptxjJ8uw7648XUupLnJJEFbGcxNKUl1/E8MEnzOLTlVNcHPrIE32S2BmMzWv/HbfvEt0d72pb02gQ==",
   "success": true,
   "projectFilePath": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.csproj",
   "expectedPackageFiles": [
@@ -127,6 +127,7 @@
     "C:\\Users\\jpedrosup\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
     "C:\\Users\\jpedrosup\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Users\\jpedrosup\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
+    "C:\\Users\\jpedrosup\\.nuget\\packages\\tinymce.blazor\\1.0.4\\tinymce.blazor.1.0.4.nupkg.sha512",
     "C:\\Users\\jpedrosup\\.nuget\\packages\\toolbelt.blazor.httpclientinterceptor\\10.2.0\\toolbelt.blazor.httpclientinterceptor.10.2.0.nupkg.sha512",
     "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.12\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.12.nupkg.sha512"
   ],

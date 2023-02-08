@@ -1857,6 +1857,24 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "TinyMCE.Blazor/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/TinyMCE.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/TinyMCE.Blazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/TinyMCE.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/TinyMCE.Blazor.props": {}
+        }
+      },
       "Toolbelt.Blazor.HttpClientInterceptor/10.2.0": {
         "type": "package",
         "dependencies": {
@@ -3905,6 +3923,24 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
+        }
+      },
+      "TinyMCE.Blazor/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/TinyMCE.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/TinyMCE.Blazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/TinyMCE.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/TinyMCE.Blazor.props": {}
         }
       },
       "Toolbelt.Blazor.HttpClientInterceptor/10.2.0": {
@@ -7986,6 +8022,27 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "TinyMCE.Blazor/1.0.4": {
+      "sha512": "s0YDK+snuE5h2iVS/JujgCSUIM0Pp/1ZOHzTY7Z7LRMO+5U7ajXDpOylUAEqgn2ZlGOajKue5u4yw/Ym1WnFPw==",
+      "type": "package",
+      "path": "tinymce.blazor/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/TinyMCE.Blazor.props",
+        "buildMultiTargeting/TinyMCE.Blazor.props",
+        "buildTransitive/TinyMCE.Blazor.props",
+        "lib/net5.0/TinyMCE.Blazor.dll",
+        "lib/net6.0/TinyMCE.Blazor.dll",
+        "staticwebassets/TinyMce.Blazor.lib.module.js",
+        "staticwebassets/tinymce-blazor.js",
+        "tiny-icon.png",
+        "tinymce.blazor.1.0.4.nupkg.sha512",
+        "tinymce.blazor.nuspec"
+      ]
+    },
     "Toolbelt.Blazor.HttpClientInterceptor/10.2.0": {
       "sha512": "Su8wCbdC8AvTrqysjfIr0Pct6xW6foqwNDyVStRoWnntJtGpksj8DaEBMUpG4O+dLDbxPqpJhDsi4IYEqOesjA==",
       "type": "package",
@@ -8031,11 +8088,13 @@
       "Microsoft.Extensions.Http >= 6.0.0",
       "Microsoft.Extensions.Logging.Configuration >= 6.0.0",
       "Shared >= 1.0.0",
+      "TinyMCE.Blazor >= 1.0.4",
       "Toolbelt.Blazor.HttpClientInterceptor >= 10.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jpedrosup\\.nuget\\packages\\": {}
+    "C:\\Users\\jpedrosup\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -8046,8 +8105,12 @@
       "packagesPath": "C:\\Users\\jpedrosup\\.nuget\\packages\\",
       "outputPath": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+      ],
       "configFilePaths": [
         "C:\\Users\\jpedrosup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8055,7 +8118,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "c:\\microservices\\projects\\packages": {},
+        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+        "https://nuget.devexpress.com/PG36XDxO52eYz79N1yPldL4NdTw8bzyHAluDGIb774gbdeM8e4/api": {},
         "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
@@ -8120,6 +8184,10 @@
           "Microsoft.Extensions.Logging.Configuration": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "TinyMCE.Blazor": {
+            "target": "Package",
+            "version": "[1.0.4, )"
           },
           "Toolbelt.Blazor.HttpClientInterceptor": {
             "target": "Package",

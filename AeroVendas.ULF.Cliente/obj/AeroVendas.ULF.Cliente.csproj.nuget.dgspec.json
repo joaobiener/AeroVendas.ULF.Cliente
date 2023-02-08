@@ -13,8 +13,12 @@
         "packagesPath": "C:\\Users\\jpedrosup\\.nuget\\packages\\",
         "outputPath": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\jpedrosup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "c:\\microservices\\projects\\packages": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://nuget.devexpress.com/PG36XDxO52eYz79N1yPldL4NdTw8bzyHAluDGIb774gbdeM8e4/api": {},
           "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
@@ -75,8 +80,12 @@
         "packagesPath": "C:\\Users\\jpedrosup\\.nuget\\packages\\",
         "outputPath": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\jpedrosup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +93,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "c:\\microservices\\projects\\packages": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://nuget.devexpress.com/PG36XDxO52eYz79N1yPldL4NdTw8bzyHAluDGIb774gbdeM8e4/api": {},
           "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
@@ -150,6 +160,10 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "TinyMCE.Blazor": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
             "Toolbelt.Blazor.HttpClientInterceptor": {
               "target": "Package",
               "version": "[10.2.0, )"
@@ -195,8 +209,12 @@
         "packagesPath": "C:\\Users\\jpedrosup\\.nuget\\packages\\",
         "outputPath": "C:\\microservices\\UnimeLF\\Microservices\\AeroVendas.ULF.Services\\Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\jpedrosup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -204,7 +222,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "c:\\microservices\\projects\\packages": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://nuget.devexpress.com/PG36XDxO52eYz79N1yPldL4NdTw8bzyHAluDGIb774gbdeM8e4/api": {},
           "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
@@ -261,8 +280,12 @@
         "packagesPath": "C:\\Users\\jpedrosup\\.nuget\\packages\\",
         "outputPath": "C:\\microservices\\UnimeLF\\Microservices\\AeroVendas.ULF.Services\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\jpedrosup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -270,7 +293,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "c:\\microservices\\projects\\packages": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://nuget.devexpress.com/PG36XDxO52eYz79N1yPldL4NdTw8bzyHAluDGIb774gbdeM8e4/api": {},
           "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {

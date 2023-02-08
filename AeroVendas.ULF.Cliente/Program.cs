@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Components.Authorization;
 using AeroVendas.ULF.Cliente.AuthProviders;
 
 
+
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
@@ -26,6 +27,7 @@ builder.Services.AddHttpClient("AeroVendasPI", (sp, cl) =>
 	cl.BaseAddress = new Uri(apiConfiguration.Value.BaseAddress); //Development
 	cl.EnableIntercept(sp);
 });
+
 
 builder.Services.AddBlazoredToast();
 builder.Services.AddScoped(
@@ -48,6 +50,5 @@ builder.Services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();
 
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<RefreshTokenService, RefreshTokenService>();
-
 
 await builder.Build().RunAsync();

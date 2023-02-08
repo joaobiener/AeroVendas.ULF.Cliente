@@ -547,7 +547,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jpedrosup\\.nuget\\packages\\": {}
+    "C:\\Users\\jpedrosup\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -558,8 +559,12 @@
       "packagesPath": "C:\\Users\\jpedrosup\\.nuget\\packages\\",
       "outputPath": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+      ],
       "configFilePaths": [
         "C:\\Users\\jpedrosup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -567,7 +572,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "c:\\microservices\\projects\\packages": {},
+        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+        "https://nuget.devexpress.com/PG36XDxO52eYz79N1yPldL4NdTw8bzyHAluDGIb774gbdeM8e4/api": {},
         "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {

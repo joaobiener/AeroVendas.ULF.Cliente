@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZvRFE2uvTuXg5KXChbMJBROmsbqcU59RI3fucFd7IKE=",
+  "Hash": "ceGnBbO8soTgapLueTysxB/zH8VXA3AWQKFd4JfRDB4=",
   "Source": "AeroVendas.ULF.Cliente",
   "BasePath": "/",
   "Mode": "Root",
@@ -4235,6 +4235,23 @@
       "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.12\\runtimes\\browser-wasm\\lib\\net6.0\\System.Xml.XPath.XDocument.dll"
     },
     {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\TinyMCE.Blazor.dll",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/TinyMCE.Blazor.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\tinymce.blazor\\1.0.4\\lib\\net6.0\\TinyMCE.Blazor.dll"
+    },
+    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Toolbelt.Blazor.HttpClientInterceptor.dll",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -7837,6 +7854,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Toolbelt.Blazor.HttpClientInterceptor.dll"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\wOt5MjRw.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/TinyMCE.Blazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\TinyMCE.Blazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\TinyMCE.Blazor.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\Wpj88El+.gz",
@@ -30634,6 +30668,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.3\\staticwebassets\\AuthenticationService.js"
+    },
+    {
+      "Identity": "C:\\Users\\jpedrosup\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\TinyMce.Blazor.lib.module.js",
+      "SourceId": "TinyMCE.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\jpedrosup\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\",
+      "BasePath": "_content/TinyMCE.Blazor",
+      "RelativePath": "TinyMce.Blazor.lib.module.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\TinyMce.Blazor.lib.module.js"
+    },
+    {
+      "Identity": "C:\\Users\\jpedrosup\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\tinymce-blazor.js",
+      "SourceId": "TinyMCE.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\jpedrosup\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\",
+      "BasePath": "_content/TinyMCE.Blazor",
+      "RelativePath": "tinymce-blazor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\tinymce.blazor\\1.0.4\\staticwebassets\\tinymce-blazor.js"
     }
   ]
 }

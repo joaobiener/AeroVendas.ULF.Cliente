@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "..\..\Microservic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "..\..\Microservices\AeroVendas.ULF.Services\Entities\Entities.csproj", "{4720E054-A433-49E0-BB9D-C57CE4910A9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeroVendas.ULF.Cliente.Toastr", "AeroVendas.ULF.Cliente.Toastr\AeroVendas.ULF.Cliente.Toastr.csproj", "{7E8803AA-3135-4CDA-940C-633D058A84E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AeroVendas.ULF.Cliente.Toastr", "AeroVendas.ULF.Cliente.Toastr\AeroVendas.ULF.Cliente.Toastr.csproj", "{7E8803AA-3135-4CDA-940C-633D058A84E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
