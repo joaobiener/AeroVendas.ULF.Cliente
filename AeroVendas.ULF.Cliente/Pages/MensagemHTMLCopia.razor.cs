@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace AeroVendas.ULF.Cliente.Pages
 {
-    public partial class MensagemHTML : IDisposable
+    public partial class MensagemHTMLCopia : IDisposable
 	{
 		public bool Aguardando = false;
 		public List<MensagemHtml> MensagemList { get; set; } = new List<MensagemHtml>();

@@ -1,0 +1,30 @@
+﻿@page "/MensagemHTMLCopia"
+@using AeroVendas.ULF.Cliente.Components
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+
+<div class="row">
+	<div class="col-md-5">
+		<Search OnSearchChanged="SearchChanged" />
+	</div>
+	<div class="col-md-5">
+		<SortMensagemHTML OnSortChanged="SortChanged" />
+	</div>
+	<div class="col-md-2">
+		<a class="btn btn-success mb-1" href="/createMensagem">Nova Mensagem</a>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<MensagensHtmlTable mensagensHTML="MensagemList" OnDelete="DeleteMensagem" Aguardando="Aguardando" />
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<Pagination MetaData="MetaData" Spread="1" SelectedPage="SelectedPage" />
+	</div>
+	<div class="col">
+		<PageSizeDropDown SelectedPageSize="SetPageSize" />
+	</div>
+</div>

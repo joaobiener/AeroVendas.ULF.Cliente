@@ -3,24 +3,27 @@
 	<table class="table">
 		<thead>
 			<tr>
-@*				<th scope="col"></th>*@
-				<th scope="col">Titulo</th>
-				<th scope="col">Criado Por</th>
-				<th scope="col">Criado Em</th>
-				<th scope="col">Modificado Por</th>
-				<th scope="col">Modificado Em</th>
+				<th>Ações</th>
+				<th>Titulo</th>
+				<th>Criado Por</th>
+				<th>Criado Em</th>
+				<th>Modificado Por</th>
+				<th>Modificado Em</th>
+				<th></th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody>
 			@foreach (var mensagem in mensagensHTML)
 			{
 				<tr>
-@*					<td>
-						<a href="/product/@product.Id">
-							<img src="@product.ImageUrl" alt="product image" style="width:100px;" />
-						</a>
-					</td>
-*@					<td class="align-middle">
+					<td>
+                        <ul class="action-list">
+                            <li><a href="#" class="btn btn-primary"><i class="fa fa-pencil-alt"></i></a></li>
+                            <li><a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a></li>
+                        </ul>
+                    </td>					
+					<td class="align-middle">
 						<a href="/mensagem/@mensagem.Id">
 							@mensagem.Titulo
 						</a>
