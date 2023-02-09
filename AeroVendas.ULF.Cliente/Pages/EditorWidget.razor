@@ -2,10 +2,11 @@
 @using TinyMCE.Blazor
 
 
+
+
 <Editor  @bind-Value=content ApiKey ="Fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0" Disable=@disable Conf="@editorConf" />
 
-<textarea @bind=content @bind:event="oninput"></textarea>
 
+@*<button @onclick="@(() => disable = !disable)">Toggle</button>*@
 
-<button @onclick="@(() => disable = !disable)">Toggle</button>
 

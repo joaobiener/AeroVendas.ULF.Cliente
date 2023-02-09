@@ -40,6 +40,12 @@ export function focusAndStyleElement(element) {
 	element.style.color = 'red';
 	element.focus();
 }
+export function focusInputComponent(id) {
+	const element = document.getElementById(id);
+
+	element.focus();
+}
+
 
 export function focusAndStyleInputComponent(id) {
 	const element = document.getElementById(id);

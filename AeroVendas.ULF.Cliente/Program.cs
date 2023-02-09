@@ -36,6 +36,7 @@ builder.Services.AddScoped(
 builder.Services.AddHttpClientInterceptor();
 
 builder.Services.AddScoped<IViewAeroVendasHttpRepository, ViewAeroVendasHttpRepository>();
+builder.Services.AddScoped<IMensagemHtmlHttpRepository, MensagemHtmlHttpRepository>();
 
 builder.Services.AddScoped<HttpInterceptorService>();
 
