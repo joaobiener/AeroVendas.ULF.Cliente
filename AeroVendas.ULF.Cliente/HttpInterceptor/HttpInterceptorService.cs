@@ -47,9 +47,11 @@ namespace AeroVendas.ULF.Cliente.HttpInterceptor
 					token = await _refreshTokenService.TryRefreshToken();
                 }
 				catch (Exception ex)  
-				{ 
+				{
+                    
+                    _navManager.NavigateTo("/logout");
 
-				}
+                }
 
                 if (!string.IsNullOrEmpty(token))
 				{

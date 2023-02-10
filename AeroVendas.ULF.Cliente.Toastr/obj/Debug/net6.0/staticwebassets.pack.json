@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\iconify-icon.min.js",
+      "PackagePath": "staticwebassets\\iconify-icon.min.js"
+    },
+    {
       "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\jquery-3.5.1.min.js",
       "PackagePath": "staticwebassets\\jquery-3.5.1.min.js"
     },

@@ -1,15 +1,13 @@
 ﻿@if (mensagensHTML.Any() && !Aguardando)
 {
-	<table class="table">
+	<table class="table table-success table-hover shadow">
 		<thead>
 			<tr>
-				<th>Ações</th>
 				<th>Titulo</th>
 				<th>Criado Por</th>
 				<th>Criado Em</th>
 				<th>Modificado Por</th>
 				<th>Modificado Em</th>
-				<th></th>
 				<th></th>
 			</tr>
 		</thead>
@@ -17,12 +15,7 @@
 			@foreach (var mensagem in mensagensHTML)
 			{
 				<tr>
-					<td>
-                        <ul class="action-list">
-                            <li><a href="#" class="btn btn-primary"><i class="fa fa-pencil-alt"></i></a></li>
-                            <li><a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a></li>
-                        </ul>
-                    </td>					
+				
 					<td class="align-middle">
 						<a href="/mensagem/@mensagem.Id">
 							@mensagem.Titulo
@@ -40,18 +33,21 @@
 					<td class="align-middle">
 						@mensagem.ModificadoEm
 					</td>
-
 					<td class="align-middle">
-						<a class="btn btn-info" href="/updateProduct/@mensagem.Id">
-							Update
+						
+						<a class="btn btn-primary active" href="/updateProduct/@mensagem.Id">
+							<iconify-icon icon="oi:eye"></iconify-icon>
 						</a>
-					</td>
-					<td class="align-middle">
+						<a class="btn btn-info" href="/updateProduct/@mensagem.Id">
+							<iconify-icon icon="oi:pencil"></iconify-icon>
+						</a>
 						<button type="button" class="btn btn-danger"
 						@onclick="() => CallConfirmationModal(mensagem.Id)">
-							Delete
+							<iconify-icon icon="oi:circle-x"></iconify-icon>
 						</button>
+						
 					</td>
+
 				</tr>
 			}
 		</tbody>

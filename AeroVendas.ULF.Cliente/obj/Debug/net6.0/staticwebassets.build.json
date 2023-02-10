@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ceGnBbO8soTgapLueTysxB/zH8VXA3AWQKFd4JfRDB4=",
+  "Hash": "lBN1k4x3SwFR2poTXor8/e6rTHKtMk1fwjqNAsCWX8E=",
   "Source": "AeroVendas.ULF.Cliente",
   "BasePath": "/",
   "Mode": "Root",
@@ -35,6 +35,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\iconify-icon.min.js",
+      "SourceId": "AeroVendas.ULF.Cliente.Toastr",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\",
+      "BasePath": "_content/AeroVendas.ULF.Cliente.Toastr",
+      "RelativePath": "iconify-icon.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\iconify-icon.min.js"
+    },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.Toastr\\wwwroot\\jquery-3.5.1.min.js",
       "SourceId": "AeroVendas.ULF.Cliente.Toastr",

@@ -116,6 +116,10 @@ build_metadata.AdditionalFiles.CssScope = b-lh94fr56fz
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWFyY2gucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-u10iee6wf6
 
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Components/SearchHtml.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWFyY2hIdG1sLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-pu2eehipa3
+
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/ContratosSemAero.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udHJhdG9zU2VtQWVyby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ovsc9gkbb1

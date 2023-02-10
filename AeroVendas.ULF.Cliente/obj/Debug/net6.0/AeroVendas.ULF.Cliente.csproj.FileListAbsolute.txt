@@ -1015,3 +1015,4 @@ C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\wOt5MjRw.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\scopedcss\Pages\MensagemHTML.razor.rz.scp.css
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\scopedcss\Pages\MensagemHTMLCopia.razor.rz.scp.css
+C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\scopedcss\Components\SearchHtml.razor.rz.scp.css

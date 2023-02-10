@@ -1,14 +1,12 @@
-﻿	<ul class="pagination hidden-xs pull-right">
+﻿ <nav aria-label="Page navigation example">
+	<ul class="pagination justify-content-left">
 		@foreach (var link in _links)
 		{
 			<li @onclick="() => OnSelectedPage(link)" style="cursor: pointer"
-				class="pagination hidden-xs pull-right @(link.Enabled ? null : "disabled")
+				class="page-item @(link.Enabled ? null : "disabled")
 				@(link.Active ? "active" : null)">
-					@link.Text
-
+				<span class="page-link" href="#">@link.Text</span>
 			</li>
 		}
 	</ul>
-
-
- 
+</nav>
