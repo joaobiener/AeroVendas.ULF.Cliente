@@ -1,0 +1,40 @@
+﻿@page "/updateMensagem/{id:guid}"
+@using TinyMCE.Blazor
+
+<h2>Formulário atualização Template</h2>
+
+@if (_mensagem != null)
+{
+
+	<EditForm EditContext="_editContext" OnValidSubmit="Update" class="card card-body bg-light mt-5">
+		<DataAnnotationsValidator />
+
+
+		<div class="mb-3 row">
+			<label for="titulo" class="col-md-2 col-form-label">Titulo:</label>
+			<div class="col-md-10">
+				<InputText id="titulo" class="form-control" @bind-Value="_mensagem.Titulo" />
+				<ValidationMessage For="@(() => _mensagem.Titulo)" />
+			</div>
+		</div>
+
+
+		<Editor @bind-Value=content ApiKey="Fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0" Disable=@disable Conf="@editorConf" />
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<button type="submit" class="btn btn-success float-end"
+						disabled="@formInvalid">
+					Gravar
+				</button>
+			</div>
+		</div>
+	</EditForm>
+	<br />
+	<div class="row">
+		<div class="col">
+			<a href="/MensagemHTML" class="btn btn-success">Back</a>
+		</div>
+	</div>
+}

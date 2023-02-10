@@ -52,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/CreateMensagemHTML.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlTWVuc2FnZW1IVE1MLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/CustomUnauthorized.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tVW5hdXRob3JpemVkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -82,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/ToastrWrapper.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9hc3RyV3JhcHBlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/UpdateMensagemHTML.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlTWVuc2FnZW1IVE1MLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Shared/Confirmation.razor]
@@ -143,10 +151,6 @@ build_metadata.AdditionalFiles.CssScope = b-q1ybpv6szd
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/MensagemHTML.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVuc2FnZW1IVE1MLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-u57b2qsjbe
-
-[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/MensagemHTMLCopia.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVuc2FnZW1IVE1MQ29waWEucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-5ra6rjy9cc
 
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
