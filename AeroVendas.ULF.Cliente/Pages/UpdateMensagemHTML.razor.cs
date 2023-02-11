@@ -26,7 +26,8 @@ namespace AeroVendas.ULF.Cliente.Pages
 			"'searchreplace visualblocks code fullscreen'," +
 			"'insertdatetime media table paste code help wordcount']"
 			},
-			{"content_style",  "body { font-family:Helvetica,Arial,sans-serif; font-size:14px" }
+			{"content_style",  "body { font-family:Helvetica,Arial,sans-serif; font-size:14px" },
+			{"height" , "1000px" }
             //{"skin", "oxide-dark" }
             ////{"content_css", "dark" }
 
