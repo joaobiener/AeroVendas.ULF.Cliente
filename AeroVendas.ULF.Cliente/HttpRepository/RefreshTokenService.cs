@@ -18,6 +18,7 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 		{
 			var authState = await _authStateProvider.GetAuthenticationStateAsync();
 			var user = authState.User;
+			
 			var expClaim = user.FindFirst(c => c.Type.Equals("exp")).Value;
 			var expTime = DateTimeOffset.FromUnixTimeSeconds(
 				Convert.ToInt64(expClaim));

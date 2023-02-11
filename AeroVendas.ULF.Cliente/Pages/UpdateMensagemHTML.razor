@@ -1,6 +1,5 @@
 ﻿@page "/updateMensagem/{id:guid}"
 @using TinyMCE.Blazor
-
 <h2>Formulário atualização Template</h2>
 
 @if (_mensagem != null)
@@ -18,9 +17,16 @@
 			</div>
 		</div>
 
+		<div class="mb-3 row">
+			<label for="titulo" class="col-md-2 col-form-label">Titulo:</label>
+			<div class="col-md-10">
+				<InputText id="templateEmailHtml" class="form-control" @bind-Value="_mensagem.TemplateEmailHtml" />
+				<ValidationMessage For="@(() => _mensagem.TemplateEmailHtml)" />
+			</div>
+		</div>
 
-		<Editor @bind-Value=content ApiKey="Fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0" Disable=@disable Conf="@editorConf" />
 
+	
 
 		<div class="row">
 			<div class="col-md-12">
@@ -31,6 +37,8 @@
 			</div>
 		</div>
 	</EditForm>
+	<Editor @bind-Value="_mensagem.TemplateEmailHtml" ApiKey="Fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0" Disable=@disable Conf="@editorConf" />
+
 	<br />
 	<div class="row">
 		<div class="col">

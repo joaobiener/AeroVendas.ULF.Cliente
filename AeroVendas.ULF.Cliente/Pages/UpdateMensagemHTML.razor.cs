@@ -5,6 +5,7 @@ using Entities.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Blazored.Toast.Services;
+using Microsoft.AspNetCore.Components.Authorization;
 
 namespace AeroVendas.ULF.Cliente.Pages
 {
@@ -12,9 +13,8 @@ namespace AeroVendas.ULF.Cliente.Pages
 	{
 		private MensagemHtml _mensagem = new MensagemHtml();
 		private EditContext? _editContext;
-		private bool formInvalid = true;
+		private bool formInvalid = false;
 
-		private string content = "";
 		bool disable = false;
 		[Parameter]
 		public Guid MensagemHtmlId { get; set; }
@@ -31,6 +31,8 @@ namespace AeroVendas.ULF.Cliente.Pages
             ////{"content_css", "dark" }
 
             };
+		[Inject]
+		private AuthenticationStateProvider _authStateProvider { get; set; }
 
 		[Inject]
 		public IMensagemHtmlHttpRepository? MensagemHtmlRepo { get; set; }
@@ -44,12 +46,31 @@ namespace AeroVendas.ULF.Cliente.Pages
 		[Parameter]
 		public Guid Id { get; set; }
 
+		private string GetDetalhes(string identName)
+		{
+			
+			char[] chavetas = { '[', ']', '"' };
+			string identSemChaves = identName.Replace("[", string.Empty).Replace("]", string.Empty).Replace("\"", string.Empty);
+
+
+			string[] arrIdent = identSemChaves.Split(",");
+
+
+			return arrIdent[1] + " " + arrIdent[2];
+		}
 		protected async override Task OnInitializedAsync()
 		{
 			_mensagem = await MensagemHtmlRepo.GetMensagemHTMLById(Id);
+			
 			_editContext = new EditContext(_mensagem);
+			
 			_editContext.OnFieldChanged += HandleFieldChanged;
 			Interceptor.RegisterEvent();
+			var authState = await _authStateProvider.GetAuthenticationStateAsync();
+			var user = authState.User;
+			_mensagem.ModificadoPor  = GetDetalhes(user.Identity.Name);
+			_mensagem.ModificadoEm = DateTime.Today;
+
 		}
 
 		private void HandleFieldChanged(object? sender, FieldChangedEventArgs e)
@@ -60,8 +81,10 @@ namespace AeroVendas.ULF.Cliente.Pages
 
 		private async Task Update()
 		{
-			await MensagemHtmlRepo.UpdateMensagem(_mensagem);
+			
 
+			await MensagemHtmlRepo.UpdateMensagem(_mensagem);
+			
 			ToastService.ShowSuccess($"Action successful. " +
 			$"Mensagem \"{_mensagem.Titulo}\" atualizada com sucesso.");
 		}

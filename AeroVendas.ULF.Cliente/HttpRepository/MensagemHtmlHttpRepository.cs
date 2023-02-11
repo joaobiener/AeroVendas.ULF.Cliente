@@ -59,15 +59,23 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 		}
 
 
-
-		public Task UpdateMensagem(MensagemHtml mensagem)
+		//public async Task UpdateProduct(Product product)
+		//	=> await _client.PutAsJsonAsync(Path.Combine("products",
+		//		product.Id.ToString()), product);
+		public async Task UpdateMensagem(MensagemHtml mensagem)
 		{
-			throw new NotImplementedException();
+			mensagem.ModificadoEm = DateTime.Today;
+			
+			await _client.PutAsJsonAsync(Path.Combine("MensagemHtml",
+				mensagem.Id.ToString()), mensagem);
 		}
 
-        public Task<MensagemHtml> GetMensagemHTMLById(Guid id)
+        public async Task<MensagemHtml> GetMensagemHTMLById(Guid id)
         {
-            throw new NotImplementedException();
-        }
-    }
+			var mensagemHtml = await _client.GetFromJsonAsync<MensagemHtml>($"MensagemHtml/{id}");
+
+			return mensagemHtml;
+		}
+		
+	}
 }
