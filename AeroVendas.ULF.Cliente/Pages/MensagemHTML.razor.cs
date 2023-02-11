@@ -68,14 +68,14 @@ namespace AeroVendas.ULF.Cliente.Pages
 
 		private async Task DeleteMensagem(Guid id)
 		{
-			await MensagemHTMLRepo.GetMensagemHTMLById(id);
+			await MensagemHTMLRepo.DeleteMensagem(id);
 
 			if (_mensagemParameters.PageNumber > 1 && MensagemList.Count == 1)
 				_mensagemParameters.PageNumber--;
 
 			await GetMensagensHTML();
 		}
-
+		
 		public void Dispose() => Interceptor.DisposeEvent();
 	}
 }

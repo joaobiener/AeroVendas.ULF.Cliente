@@ -53,10 +53,10 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 			throw new NotImplementedException();
 		}
 
-		public Task DeleteMensagem(Guid id)
-		{
-			throw new NotImplementedException();
-		}
+		public async Task DeleteMensagem(Guid id)
+			=> await _client.DeleteAsync(Path.Combine("MensagemHTML", id.ToString()));
+
+
 
 
 		//public async Task UpdateProduct(Product product)
