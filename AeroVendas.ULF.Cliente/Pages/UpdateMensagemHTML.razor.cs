@@ -46,7 +46,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 		[Parameter]
 		public Guid Id { get; set; }
 
-		private string GetDetalhes(string identName)
+		private string GetFirstDetalhes(string identName)
 		{
 			
 			char[] chavetas = { '[', ']', '"' };
@@ -56,7 +56,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 			string[] arrIdent = identSemChaves.Split(",");
 
 
-			return arrIdent[1] + " " + arrIdent[2];
+			return arrIdent[0];
 		}
 		protected async override Task OnInitializedAsync()
 		{
@@ -68,8 +68,8 @@ namespace AeroVendas.ULF.Cliente.Pages
 			Interceptor.RegisterEvent();
 			var authState = await _authStateProvider.GetAuthenticationStateAsync();
 			var user = authState.User;
-			_mensagem.ModificadoPor  = GetDetalhes(user.Identity.Name);
-			_mensagem.ModificadoEm = DateTime.Today;
+			_mensagem.ModificadoPor  = GetFirstDetalhes(user.Identity.Name);
+			_mensagem.ModificadoEm = DateTime.Now;
 
 		}
 
@@ -85,8 +85,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 
 			await MensagemHtmlRepo.UpdateMensagem(_mensagem);
 			
-			ToastService.ShowSuccess($"Action successful. " +
-			$"Mensagem \"{_mensagem.Titulo}\" atualizada com sucesso.");
+			ToastService.ShowSuccess($"Mensagem \"{_mensagem.Titulo}\" atualizada com sucesso.");
 		}
 
 
