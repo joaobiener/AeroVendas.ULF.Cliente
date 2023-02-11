@@ -17,15 +17,8 @@
 			</div>
 		</div>
 
-		<div class="mb-3 row">
-			<label for="titulo" class="col-md-2 col-form-label">Titulo:</label>
-			<div class="col-md-10">
-				<InputText id="templateEmailHtml" class="form-control" @bind-Value="_mensagem.TemplateEmailHtml" />
-				<ValidationMessage For="@(() => _mensagem.TemplateEmailHtml)" />
-			</div>
-		</div>
 
-
+		<InputText type="hidden" id="templateEmailHtml" class="form-control" @bind-Value="_mensagem.TemplateEmailHtml" />
 	
 
 		<div class="row">

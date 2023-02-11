@@ -81,7 +81,6 @@ namespace AeroVendas.ULF.Cliente.Pages
 
 		private async Task Update()
 		{
-			
 
 			await MensagemHtmlRepo.UpdateMensagem(_mensagem);
 			
