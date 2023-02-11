@@ -1,6 +1,6 @@
 ﻿@page "/CreateMensagemHTML"
 @using TinyMCE.Blazor
-<h2>Cria novo Template E-Mail</h2>
+<h2>Nova Campanha</h2>
 
 <EditForm EditContext="_editContext" OnValidSubmit="Create" class="card card-body bg-light mt-5">
 	<DataAnnotationsValidator />
@@ -13,13 +13,22 @@
 		</div>
 	</div>
 
+	<InputText type="hidden" id="templateEmailHtml" class="form-control" @bind-Value="_mensagem.TemplateEmailHtml" />
 
-	<Editor @bind-Value=content ApiKey="Fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0" Disable=@disable Conf="@editorConf" />
-
+	
 	<div class="row">
 		<div class="col-md-12">
 			<button type="submit" class="btn btn-success float-end" 
-					disabled="@formInvalid">Create</button>
+					disabled="@formInvalid">Criar</button>
 		</div>
 	</div>
 </EditForm>
+<Editor @bind-Value="_mensagem.TemplateEmailHtml" ApiKey="Fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0" Disable=@disable Conf="@editorConf" />
+
+<br />
+<div class="row">
+	<div class="col">
+		<a href="/MensagemHTML" class="btn btn-success">Back</a>
+	</div>
+</div>
+

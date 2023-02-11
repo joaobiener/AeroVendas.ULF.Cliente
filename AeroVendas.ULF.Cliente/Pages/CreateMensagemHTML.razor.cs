@@ -5,6 +5,8 @@ using Entities.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Blazored.Toast.Services;
+using Microsoft.AspNetCore.Components.Authorization;
+
 
 namespace AeroVendas.ULF.Cliente.Pages;
 
@@ -12,9 +14,8 @@ public partial class CreateMensagemHTML : IDisposable
 {
 	private MensagemHtml _mensagem = new MensagemHtml();
 	private EditContext? _editContext;
-	private bool formInvalid = true;
+	private bool formInvalid = false;
 
-	private string content = "";
 	bool disable = false;
 	[Parameter]
 	public Guid MensagemHtmlId { get; set; }
@@ -26,7 +27,8 @@ public partial class CreateMensagemHTML : IDisposable
 			"'searchreplace visualblocks code fullscreen'," +
 			"'insertdatetime media table paste code help wordcount']"
 			},
-			{"content_style",  "body { font-family:Helvetica,Arial,sans-serif; font-size:14px" }
+			{"content_style",  "body { font-family:Helvetica,Arial,sans-serif; font-size:14px" },
+			{"height" , "1000px" }
             //{"skin", "oxide-dark" }
             ////{"content_css", "dark" }
 
@@ -34,18 +36,37 @@ public partial class CreateMensagemHTML : IDisposable
 
 	[Inject]
 	public IMensagemHtmlHttpRepository? MensagemHtmlRepo { get; set; }
-
+	[Inject]
+	public NavigationManager? NavigationManager { get; set; }
 	[Inject]
 	public HttpInterceptorService? Interceptor { get; set; }
+	[Inject]
+	private AuthenticationStateProvider _authStateProvider { get; set; }
 
 	[Inject]
 	public IToastService? ToastService { get; set; }
+	private string GetFirstDetalhes(string identName)
+	{
 
-	protected override void OnInitialized()
+		char[] chavetas = { '[', ']', '"' };
+		string identSemChaves = identName.Replace("[", string.Empty).Replace("]", string.Empty).Replace("\"", string.Empty);
+
+
+		string[] arrIdent = identSemChaves.Split(",");
+
+
+		return arrIdent[0];
+	}
+	protected async override void OnInitialized()
 	{
 		_editContext = new EditContext(_mensagem);
 		_editContext.OnFieldChanged += HandleFieldChanged;
 		Interceptor.RegisterEvent();
+
+		var authState = await _authStateProvider.GetAuthenticationStateAsync();
+		var user = authState.User;
+		_mensagem.CriadoPor = GetFirstDetalhes(user.Identity.Name);
+		
 	}
 
 	private void HandleFieldChanged(object? sender, FieldChangedEventArgs e)
@@ -57,12 +78,15 @@ public partial class CreateMensagemHTML : IDisposable
 	private async Task Create()
 	{
 		await MensagemHtmlRepo.CreateMensagem(_mensagem);
-
 		ToastService.ShowSuccess($"Action successful. " +
-			$"Mensagem \"{_mensagem.Titulo}\" adicionado com sucesso.");
+				$"Mensagem \"{_mensagem.Titulo}\" successfully added.");
 		_mensagem = new MensagemHtml();
 		_editContext.OnValidationStateChanged += ValidationChanged;
 		_editContext.NotifyValidationStateChanged();
+		NavigationManager.NavigateTo("/MensagemHTML");
+
+		
+		
 	}
 
 	private void ValidationChanged(object? sender, ValidationStateChangedEventArgs e)

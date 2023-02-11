@@ -48,10 +48,10 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 
 			return pagingResponse;
 		}
-		public Task CreateMensagem(MensagemHtml mensagem)
-		{
-			throw new NotImplementedException();
-		}
+		public async Task CreateMensagem(MensagemHtml mensagem) => 
+			await _client.PostAsJsonAsync("MensagemHTML/CreateMessageHTML", mensagem);
+
+	
 
 		public async Task DeleteMensagem(Guid id)
 			=> await _client.DeleteAsync(Path.Combine("MensagemHTML", id.ToString()));
