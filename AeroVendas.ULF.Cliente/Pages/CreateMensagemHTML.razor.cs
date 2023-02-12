@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Blazored.Toast.Services;
 using Microsoft.AspNetCore.Components.Authorization;
-
+using Shared.DataTransferObjects;
 
 namespace AeroVendas.ULF.Cliente.Pages;
 
 public partial class CreateMensagemHTML : IDisposable
 {
-	private MensagemHtml _mensagem = new MensagemHtml();
+	private MensagemHtmlForCreationDto _mensagem = new MensagemHtmlForCreationDto();
 	private EditContext? _editContext;
 	private bool formInvalid = false;
 
@@ -61,7 +61,7 @@ public partial class CreateMensagemHTML : IDisposable
 	{
 		_editContext = new EditContext(_mensagem);
 		_editContext.OnFieldChanged += HandleFieldChanged;
-		Interceptor.RegisterEvent();
+
 
 		var authState = await _authStateProvider.GetAuthenticationStateAsync();
 		var user = authState.User;
@@ -78,11 +78,9 @@ public partial class CreateMensagemHTML : IDisposable
 	private async Task Create()
 	{
 		await MensagemHtmlRepo.CreateMensagem(_mensagem);
-		ToastService.ShowSuccess($"Action successful. " +
-				$"Mensagem \"{_mensagem.Titulo}\" successfully added.");
-		_mensagem = new MensagemHtml();
-		_editContext.OnValidationStateChanged += ValidationChanged;
-		_editContext.NotifyValidationStateChanged();
+		ToastService.ShowSuccess($"Mensagem \"{_mensagem.Titulo}\" foi adicionada com sucesso.");
+		_mensagem = new MensagemHtmlForCreationDto();
+		
 		NavigationManager.NavigateTo("/MensagemHTML");
 
 		

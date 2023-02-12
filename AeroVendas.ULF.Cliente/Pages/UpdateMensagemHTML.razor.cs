@@ -70,7 +70,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 			var authState = await _authStateProvider.GetAuthenticationStateAsync();
 			var user = authState.User;
 			_mensagem.ModificadoPor  = GetFirstDetalhes(user.Identity.Name);
-			_mensagem.ModificadoEm = DateTime.Now;
+
 
 		}
 

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.WebUtilities;
 using System.Net.Http.Json;
 using System.Text.Json;
 using AeroVendas.ULF.Cliente.HttpRepository;
+using Shared.DataTransferObjects;
 
 namespace AeroVendas.ULF.Cliente.HttpRepository
 {
@@ -48,7 +49,7 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 
 			return pagingResponse;
 		}
-		public async Task CreateMensagem(MensagemHtml mensagem) => 
+		public async Task CreateMensagem(MensagemHtmlForCreationDto mensagem) => 
 			await _client.PostAsJsonAsync("MensagemHTML/CreateMessageHTML", mensagem);
 
 	

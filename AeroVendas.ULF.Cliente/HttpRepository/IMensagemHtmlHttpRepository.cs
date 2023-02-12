@@ -1,5 +1,6 @@
 ﻿using AeroVendas.ULF.Cliente.Features;
 using Entities.Models;
+using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
 
 
@@ -12,7 +13,7 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 
 		Task<PagingResponse<MensagemHtml>> GetMensagensHTML(ViewAeroVendasParameters parameters);
 		Task<MensagemHtml> GetMensagemHTMLById(Guid id);
-		Task CreateMensagem(MensagemHtml mensagem);
+		Task CreateMensagem(MensagemHtmlForCreationDto mensagem);
 
 		//Task<string> UploadProductImage(MultipartFormDataContent content);
 		Task UpdateMensagem(MensagemHtml mensagem);
