@@ -12,8 +12,11 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "AngleSharp.dll": "sha256-eOME8J4K+EBEFzO4m7PCaBCfocQgAIWnwe2wl7ZyPXo=",
+      "AngleSharp.Css.dll": "sha256-kUrW3KpYWDNH21P0mBxUJ2YEx8paN8JRJjEifpAgbgs=",
       "Blazored.LocalStorage.dll": "sha256-Jq\/dS58mO5wtL2d0x\/FeAdDZ1bUTpTzPODJpBZUre\/4=",
       "Blazored.Toast.dll": "sha256-CcIVVy2RoxccsJ8RkcFkTbxkDnmYidEQcP\/mHv3o1Zo=",
+      "HtmlSanitizer.dll": "sha256-vAwg4KDE\/YydW572F72YhzMYk9Fut83oeSutkaAIN5k=",
       "Microsoft.AspNetCore.Authentication.Abstractions.dll": "sha256-iw51tdKcETC5QqlJLWett1iPlLZgUrRdZfkV7EoaD4k=",
       "Microsoft.AspNetCore.Authentication.Core.dll": "sha256-NP2svkDxlIVJsMiWAmj552NCYo4j7YnOUr2+jkz5+pc=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-QoBf8ZUgaWJCUGT3n4SViOqz82zpsFTQBgBR38X0SQM=",
@@ -72,6 +75,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-jjvkA2MkUDycoIIikuTOZFtCe2gJtIJl1sT7Vif+dgM=",
       "Microsoft.Net.Http.Headers.dll": "sha256-P66ftDrXwc6ayND8uYzIk0CPQy1GjNZAPHx9RMhi3V4=",
       "Newtonsoft.Json.dll": "sha256-XZbuUbKv9ZIDnuvC7SA9n1X935wIgvs00\/DgeDdJVKU=",
+      "System.Collections.Immutable.dll": "sha256-rnri3OnZ8i4b39PzsvbWxmNmg+N9ZXpELh7ev3QUGVo=",
       "System.IO.Pipelines.dll": "sha256-6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=",
       "TinyMCE.Blazor.dll": "sha256-fQUszcScxAw7vRx1ZEejcmtSxDw9WVHtaKsiDBCnxZo=",
       "Toolbelt.Blazor.HttpClientInterceptor.dll": "sha256-bdK8iH5zRXp0oRwnxT4Nh173M2BfaQd8EiHEpBT0xJc=",
@@ -83,7 +87,6 @@
       "System.AppContext.dll": "sha256-ub8aXHKfWvBfu7HTP1Zb6RRiaSU2JIpEItUJHCtFTtY=",
       "System.Buffers.dll": "sha256-muOkNXS4DDD6ByJNyg5KPCLvtcLnM2XmofI3t9rZ9So=",
       "System.Collections.Concurrent.dll": "sha256-kXKAZlDkT0SoLHaZ4u5lYcy5Y\/35Vq8GSCjDf\/4qVTU=",
-      "System.Collections.Immutable.dll": "sha256-xhunW0QNiMhY3135shP6\/\/2HlbY9NVrv70pU22Qgz1c=",
       "System.Collections.NonGeneric.dll": "sha256-Yxx0dtHOQCZqH7y2AIr03AznR0x5X3BKhXGtGhWEujg=",
       "System.Collections.Specialized.dll": "sha256-6jjoGOP+xCJV4mirO4ydvjn9gPYWCpjUTYDacFjA2mk=",
       "System.Collections.dll": "sha256-Jc8jzYtzyTL6JWZ8U1hYlZNWueR18vCforXj4N\/6BUA=",
@@ -244,7 +247,7 @@
       "AeroVendas.ULF.Cliente.Toastr.dll": "sha256-1tQQh\/GOKR4DJGSyIbmo\/VpiE0aVhh7ZjN0M2bIT7lY=",
       "Entities.dll": "sha256-fmB9H2njZ+4r7WY9pslvgPW67hmzAnnO\/BmmWwuwpSo=",
       "Shared.dll": "sha256-ondZQ+\/O6GmOvY5N30YThc1MiiewKSgsKe053YdQV3M=",
-      "AeroVendas.ULF.Cliente.dll": "sha256-6OCIWwKZMni+U7hcvUVuK5dhGo4H+QtL1ZtWaVPDLZg="
+      "AeroVendas.ULF.Cliente.dll": "sha256-Rw5ERM0YttLubs3\/A9fWjPjL5Nhu5L7JTNGckdQRz0k="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -253,7 +256,7 @@
       "Entities.pdb": "sha256-BBHU36hsFOOmwg2sIRlpy83Eb2G5EZGFlx7O1HlnWco=",
       "Shared.pdb": "sha256-HWc7QwH\/O1dXFkzx7frgT2tpf6lHDBOa\/xH8m27KRv4=",
       "AeroVendas.ULF.Cliente.Toastr.pdb": "sha256-9D\/wDyhoGt5vWmWPRO32xgwZ3cCFp\/xowzQdxbno1QY=",
-      "AeroVendas.ULF.Cliente.pdb": "sha256-cOSOWhGRImnfjIOeesT8iEHCb\/k8rM563oCBzkfa1ag="
+      "AeroVendas.ULF.Cliente.pdb": "sha256-BbA1kiE9XtoTaOHbb6NKbZwmIJllGl4alQqzw6c9jiw="
     },
     "runtime": {
       "dotnet.6.0.12.1wms6qxvie.js": "sha256-qD0QxS71qYTQZMj+JDk0IXr28ewa+pSDzShFKSNkQ+0=",

@@ -131,6 +131,10 @@
               "target": "Package",
               "version": "[4.0.0, )"
             },
+            "HtmlSanitizer": {
+              "target": "Package",
+              "version": "[8.0.645, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[6.0.3, )"
