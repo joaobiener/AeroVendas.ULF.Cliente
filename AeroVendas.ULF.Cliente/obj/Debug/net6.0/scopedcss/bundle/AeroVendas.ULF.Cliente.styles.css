@@ -386,6 +386,19 @@
         text-align: center !important;
     }
 }
+/* /Pages/MensagemHTMLPreview.razor.rz.scp.css */
+.product-image[b-x3ov9y1pi3] {
+	width:  100%;
+}
+
+.product-title[b-x3ov9y1pi3] {
+	color: #007bff;
+}
+
+.product-description[b-x3ov9y1pi3] {
+	font-style: italic;
+	white-space: pre-line;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-s3epnszf9b] {
     position: relative;

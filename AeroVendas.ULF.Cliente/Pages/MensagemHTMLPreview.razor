@@ -1,0 +1,38 @@
+﻿@page "/MensagemHTML/{mensagemId:guid}"
+
+<div class="card">
+	<div class="card-body">
+		<div class="row">
+			<div class="col">
+				<h2>@Mensagem.Titulo</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+					@Mensagem.TemplateEmailHtml
+			</div>
+		
+			<div class="row">
+				<div class="col">
+					<strong>Criado Em:</strong> @Mensagem.CriadoEm
+				</div>
+				<div class="col">
+					<strong>Criado Por:</strong> @Mensagem.CriadoPor
+				</div>
+				<div class="col">
+					<strong>Modificado Em:</strong> @Mensagem.ModificadoEm
+				</div>
+				<div class="col">
+					<strong>Modificado Por:</strong> @Mensagem.ModificadoPor
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<br />
+<div class="row">
+	<div class="col">
+		<a href="/MensagemHTML" class="btn btn-success">Back</a>
+	</div>
+</div>
