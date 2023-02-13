@@ -65,7 +65,7 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 		//		product.Id.ToString()), product);
 		public async Task UpdateMensagem(MensagemHtml mensagem)
 		{
-			mensagem.ModificadoEm = DateTime.Today;
+			mensagem.ModificadoEm = DateTime.Now;
 			
 			await _client.PutAsJsonAsync(Path.Combine("MensagemHtml",
 				mensagem.Id.ToString()), mensagem);
