@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GhgGO2VqJfCapR+6PrkoRK1Un9TX/ZBRH5sb0YVcFJKqnqU1Uo9eHz0axgkozKIGI9mYG5kkiM5xd8Bp2mBhCQ==",
+  "dgSpecHash": "tKf0GRufOiK6VKYiCOjSNP6o/tNhlMuUrRGdJL+cbw7m6umvOaguMkP+6e8XE8dGPgwYw7H/uAHrcDMhyHjbrw==",
   "success": true,
   "projectFilePath": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,7 @@
     "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.0\\microsoft.aspnetcore.http.2.2.0.nupkg.sha512",
     "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
-    "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.12\\microsoft.aspnetcore.metadata.6.0.12.nupkg.sha512",
     "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",

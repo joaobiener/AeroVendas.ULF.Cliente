@@ -7,6 +7,8 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using AeroVendas.ULF.Cliente.HttpRepository;
 using Shared.DataTransferObjects;
+using Entities.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace AeroVendas.ULF.Cliente.HttpRepository
 {
@@ -14,13 +16,16 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 	{
 		private readonly HttpClient _client;
 		private readonly NavigationManager _navManager;
+		private readonly ApiConfiguration _apiConfiguration;
 		private readonly JsonSerializerOptions _options =
 			new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
 
-		public MensagemHtmlHttpRepository(HttpClient client, NavigationManager navManager,IConfiguration configuration)
+		public MensagemHtmlHttpRepository(HttpClient client, NavigationManager navManager,
+			IOptions<ApiConfiguration> configuration)
 		{
 			_client = client;
 			_navManager = navManager;
+			_apiConfiguration = configuration.Value;
 
 		}
 
@@ -57,12 +62,16 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 		public async Task DeleteMensagem(Guid id)
 			=> await _client.DeleteAsync(Path.Combine("MensagemHTML", id.ToString()));
 
+		public async Task<string> UploadMensagensImage(MultipartFormDataContent content)
+		{
+			var postResult = await _client.PostAsync("upload", content);
+			var postContent = await postResult.Content.ReadAsStringAsync();
+			var imgUrl = Path.Combine(_apiConfiguration.BaseAddress, postContent);
+
+			return imgUrl;
+		}
 
 
-
-		//public async Task UpdateProduct(Product product)
-		//	=> await _client.PutAsJsonAsync(Path.Combine("products",
-		//		product.Id.ToString()), product);
 		public async Task UpdateMensagem(MensagemHtml mensagem)
 		{
 			mensagem.ModificadoEm = DateTime.Now;
@@ -77,6 +86,7 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 
 			return mensagemHtml;
 		}
-		
+
+
 	}
 }

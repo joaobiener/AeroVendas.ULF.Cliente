@@ -37,7 +37,8 @@ namespace AeroVendas.ULF.Cliente.Pages
 
 		[Inject]
 		public IMensagemHtmlHttpRepository? MensagemHtmlRepo { get; set; }
-
+		[Inject]
+		public NavigationManager? NavigationManager { get; set; }
 		[Inject]
 		public HttpInterceptorService? Interceptor { get; set; }
 
@@ -86,6 +87,8 @@ namespace AeroVendas.ULF.Cliente.Pages
 			await MensagemHtmlRepo.UpdateMensagem(_mensagem);
 			
 			ToastService.ShowSuccess($"Mensagem \"{_mensagem.Titulo}\" atualizada com sucesso.");
+
+			NavigationManager.NavigateTo("/MensagemHTML");
 		}
 
 

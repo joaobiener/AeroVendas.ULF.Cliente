@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wPB1eOuy1llTgeGbglrRzGdPsaqxHA2qAclRPReq9I4=",
+  "Hash": "zeCUDhId/8hFTHdMZdkkHA7xBVdUngW5CPYvAIS9PKA=",
   "Source": "AeroVendas.ULF.Cliente",
   "BasePath": "/",
   "Mode": "Root",
@@ -764,7 +764,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Http.Features.dll"
+      "OriginalItemSpec": "C:\\Users\\jpedrosup\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\lib\\net5.0\\Microsoft.AspNetCore.Http.Features.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
@@ -4966,23 +4966,6 @@
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Formatters.dll"
     },
     {
-      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\7GEmYsCs.gz",
-      "SourceId": "AeroVendas.ULF.Cliente",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Http.Features.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Features.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Features.dll"
-    },
-    {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\7ojDmVo6.gz",
       "SourceId": "AeroVendas.ULF.Cliente",
       "SourceType": "Computed",
@@ -5015,6 +4998,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ServiceProcess.dll"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\7UaYYVVu.gz",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Http.Features.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Features.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Features.dll"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\obj\\Debug\\net6.0\\build-gz\\7Y55iER2.gz",

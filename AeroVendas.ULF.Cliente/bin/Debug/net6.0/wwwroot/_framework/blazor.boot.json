@@ -34,7 +34,7 @@
       "Microsoft.AspNetCore.Http.dll": "sha256-rL7yDIoSBIK2HEpXD\/iOhoUrVkI3rsR07sn5BA5ddUg=",
       "Microsoft.AspNetCore.Http.Abstractions.dll": "sha256-qFKmKNr9iAZiZxOVvLJBfMhkKfDy1GvY81fHh1hiphU=",
       "Microsoft.AspNetCore.Http.Extensions.dll": "sha256-dsGZ+sGJdrYngMg72CIF31THFtl6ovcKTjtGtj9orn8=",
-      "Microsoft.AspNetCore.Http.Features.dll": "sha256-J2xQUZ4BD6tsrQkvGS5HDQfkTGMzmaS76TA9nJrtCpg=",
+      "Microsoft.AspNetCore.Http.Features.dll": "sha256-nhDtQDkvXQUWiexwW5atxrEm6abFLbvzeVCl\/Gb5kvI=",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": "sha256-+RBHrjVBEsNeF+K+Q0fDR7SsepVbUX6lYpEEGjKWY0c=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-K3FoLKXSEzoky5knG0YNJtSbJeUnWnZojUlEIM7jV8E=",
       "Microsoft.AspNetCore.Mvc.Abstractions.dll": "sha256-2ZTJ3DDWIlT8zmUz46ry3ejC+qjXXqokBlQMq3pQ0ac=",
@@ -245,18 +245,18 @@
       "netstandard.dll": "sha256-\/CRbZZ6en3BoMsR5fhsJCTE9TYhik+E7KU+O9cBdC9c=",
       "System.Private.CoreLib.dll": "sha256-ftEeXsH4HQ3J6VlVJuI3mbfqZxGyNtYVxuIQD\/8waHw=",
       "AeroVendas.ULF.Cliente.Toastr.dll": "sha256-1tQQh\/GOKR4DJGSyIbmo\/VpiE0aVhh7ZjN0M2bIT7lY=",
-      "Entities.dll": "sha256-fmB9H2njZ+4r7WY9pslvgPW67hmzAnnO\/BmmWwuwpSo=",
+      "Entities.dll": "sha256-1Zk0K0939jJh1S+Z6gfaOHquxRGCnzLht7BHhPQCAqg=",
       "Shared.dll": "sha256-ondZQ+\/O6GmOvY5N30YThc1MiiewKSgsKe053YdQV3M=",
-      "AeroVendas.ULF.Cliente.dll": "sha256-Rw5ERM0YttLubs3\/A9fWjPjL5Nhu5L7JTNGckdQRz0k="
+      "AeroVendas.ULF.Cliente.dll": "sha256-bxp72Viqm5R8vYp2VgKhgECOR7We63oHJ5mVktNyUbs="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Entities.pdb": "sha256-BBHU36hsFOOmwg2sIRlpy83Eb2G5EZGFlx7O1HlnWco=",
+      "Entities.pdb": "sha256-NIxexWrMtvqiuDi22cnnCXyyh5uVQPKL0xbyKYh7PtM=",
       "Shared.pdb": "sha256-HWc7QwH\/O1dXFkzx7frgT2tpf6lHDBOa\/xH8m27KRv4=",
       "AeroVendas.ULF.Cliente.Toastr.pdb": "sha256-9D\/wDyhoGt5vWmWPRO32xgwZ3cCFp\/xowzQdxbno1QY=",
-      "AeroVendas.ULF.Cliente.pdb": "sha256-BbA1kiE9XtoTaOHbb6NKbZwmIJllGl4alQqzw6c9jiw="
+      "AeroVendas.ULF.Cliente.pdb": "sha256-2a6t9vTNEeePlstcAmXQwvWGAKb6ImGXpfsKbDdjDK4="
     },
     "runtime": {
       "dotnet.6.0.12.1wms6qxvie.js": "sha256-qD0QxS71qYTQZMj+JDk0IXr28ewa+pSDzShFKSNkQ+0=",

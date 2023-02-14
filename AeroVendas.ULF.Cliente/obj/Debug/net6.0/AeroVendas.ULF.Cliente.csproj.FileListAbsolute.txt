@@ -757,7 +757,6 @@ C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\qyklPdVr.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\Ii+FAgzX.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\+Yhfb+wK.gz
-C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\7GEmYsCs.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\57vl72R7.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\sbNWPxgE.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\8BEEe3UI.gz
@@ -1028,3 +1027,4 @@ C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\mpOvyTHR.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\Y35ej0Y8.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\5m514VS+.gz
+C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\7UaYYVVu.gz
