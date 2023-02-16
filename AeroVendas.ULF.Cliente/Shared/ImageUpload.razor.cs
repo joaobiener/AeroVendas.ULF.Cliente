@@ -1,4 +1,5 @@
 ﻿using AeroVendas.ULF.Cliente.HttpRepository;
+using Blazored.Toast.Services;
 using Entities.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
@@ -16,6 +17,9 @@ namespace AeroVendas.ULF.Cliente.Shared
 
 		[Parameter]
 		public EventCallback<string> OnChange { get; set; }
+		[Inject]
+		public IToastService? ToastService { get; set; }
+
 
 		[Inject]
 		public IArquivoHttpRepository? ArquivoRepo { get; set; }
@@ -42,7 +46,9 @@ namespace AeroVendas.ULF.Cliente.Shared
 
 				arquivo = await ArquivoRepo.UploadImagem(content);
 
-				 _content = Convert.ToBase64String(arquivo.DataFiles);
+				ToastService.ShowSuccess($"Imagem \"{imageFile.Name}\" foi adicionada com sucesso.");
+
+				_content = Convert.ToBase64String(arquivo.DataFiles);
 			
 				await OnChange.InvokeAsync(_content);
 			}
