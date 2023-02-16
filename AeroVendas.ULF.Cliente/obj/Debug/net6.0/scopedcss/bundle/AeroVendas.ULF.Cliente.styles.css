@@ -399,6 +399,15 @@
 	font-style: italic;
 	white-space: pre-line;
 }
+/* /Shared/ImageUpload.razor.rz.scp.css */
+.image-name[b-pspj04uwpa] {
+	margin-left: 10px;
+}
+
+.image-preview[b-pspj04uwpa] {
+	width: 300px;
+	margin-top: 15px;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-s3epnszf9b] {
     position: relative;

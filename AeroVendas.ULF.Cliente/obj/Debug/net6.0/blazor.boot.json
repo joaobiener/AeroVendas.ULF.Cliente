@@ -245,18 +245,18 @@
       "netstandard.dll": "sha256-\/CRbZZ6en3BoMsR5fhsJCTE9TYhik+E7KU+O9cBdC9c=",
       "System.Private.CoreLib.dll": "sha256-ftEeXsH4HQ3J6VlVJuI3mbfqZxGyNtYVxuIQD\/8waHw=",
       "AeroVendas.ULF.Cliente.Toastr.dll": "sha256-1tQQh\/GOKR4DJGSyIbmo\/VpiE0aVhh7ZjN0M2bIT7lY=",
-      "Entities.dll": "sha256-1Zk0K0939jJh1S+Z6gfaOHquxRGCnzLht7BHhPQCAqg=",
-      "Shared.dll": "sha256-ondZQ+\/O6GmOvY5N30YThc1MiiewKSgsKe053YdQV3M=",
-      "AeroVendas.ULF.Cliente.dll": "sha256-AlfDc6DAcIPMkYeQ4hvXQmMJ+zJjwGU8tWCQvYDhrTo="
+      "Entities.dll": "sha256-acSR9Q8nH3YfSolZ75XpTysoBQnWihPcMqthRXV2KAc=",
+      "Shared.dll": "sha256-ungpsKoNxsD2EPJ12fFUKj1Ahw9X9VmVex4R0hQ2NvM=",
+      "AeroVendas.ULF.Cliente.dll": "sha256-y+HlcwC00RLZ+LMWWQFjkmJ74La2BmzlJ7DIFsvx0jA="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Entities.pdb": "sha256-NIxexWrMtvqiuDi22cnnCXyyh5uVQPKL0xbyKYh7PtM=",
-      "Shared.pdb": "sha256-HWc7QwH\/O1dXFkzx7frgT2tpf6lHDBOa\/xH8m27KRv4=",
+      "Entities.pdb": "sha256-dbjb78H1WeIkUSkiMF2ZLYUGSHnvQH7Cjd0EDe0aA1o=",
+      "Shared.pdb": "sha256-fTJk6YgYCJT\/pXvWjuEA7cDdG8pwfBWkjGkYXnUZpYk=",
       "AeroVendas.ULF.Cliente.Toastr.pdb": "sha256-9D\/wDyhoGt5vWmWPRO32xgwZ3cCFp\/xowzQdxbno1QY=",
-      "AeroVendas.ULF.Cliente.pdb": "sha256-sLYitDULVMaOgxMjoUHVsBF80TpZwHGt7xLWaehKwmI="
+      "AeroVendas.ULF.Cliente.pdb": "sha256-eoxpNd2EFLuDdPWH2ehmYg516NjQv2IvUxYqFpvKvmM="
     },
     "runtime": {
       "dotnet.6.0.12.1wms6qxvie.js": "sha256-qD0QxS71qYTQZMj+JDk0IXr28ewa+pSDzShFKSNkQ+0=",
