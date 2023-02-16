@@ -32,12 +32,12 @@ namespace AeroVendas.ULF.Cliente.Shared
 
 			var resizedFile = await imageFile.RequestImageFileAsync("image/png", 300, 500);
 
-			using (var ms = resizedFile.OpenReadStream(resizedFile.Size))
+			using (var ms = imageFile.OpenReadStream(imageFile.Size))
 			{
 				var content = new MultipartFormDataContent();
 				content.Headers.ContentDisposition = 
 					new ContentDispositionHeaderValue("form-data");
-				content.Add(new StreamContent(ms, Convert.ToInt32(resizedFile.Size)),
+				content.Add(new StreamContent(ms, Convert.ToInt32(imageFile.Size)),
 					"image", imageFile.Name);
 
 				arquivo = await ArquivoRepo.UploadImagem(content);
