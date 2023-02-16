@@ -11,10 +11,10 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 
 
 
-		//Task<PagingResponse<MensagemHtml>> GetMensagensHTML(ViewAeroVendasParameters parameters);
+		Task<PagingResponse<Arquivo>> GetImagensHTML(ViewAeroVendasParameters parameters);
 		//Task<MensagemHtml> GetMensagemHTMLById(Guid id);
 		//Task CreateMensagem(MensagemHtmlForCreationDto mensagem);
-		Task<string> UploadMensagensImage(MultipartFormDataContent content);
+		Task<Arquivo> UploadImagem(MultipartFormDataContent content);
 		//Task UpdateMensagem(MensagemHtml mensagem);
 		//Task DeleteMensagem(Guid id);
 

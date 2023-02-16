@@ -6,9 +6,12 @@
 </button>
 <span class="image-name">@_fileUploadMessage</span>
 
-@if(ImgUrl != null)
+@if(arquivo != null)
 {
 	<div>
-		<img src="@ImgUrl" class="image-preview" />
+		<img class="image" src="data:image/gif;base64,@_content">
+
+		<img class="image-preview" src="data:image/gif;base64,@_content">
+		
 	</div>
 }

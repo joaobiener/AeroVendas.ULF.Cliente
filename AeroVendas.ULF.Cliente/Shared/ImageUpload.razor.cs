@@ -1,22 +1,24 @@
 ﻿using AeroVendas.ULF.Cliente.HttpRepository;
+using Entities.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using System.Net.Http.Headers;
+using System.Security.AccessControl;
 
 namespace AeroVendas.ULF.Cliente.Shared
 {
     public partial class ImageUpload
 	{
 		private string _fileUploadMessage = "No file chosen";
-
+		private string _content;
 		[Parameter]
-		public string? ImgUrl { get; set; }
+		public Arquivo? arquivo { get; set; }
 
 		[Parameter]
 		public EventCallback<string> OnChange { get; set; }
 
 		[Inject]
-		public IArquivoHttpRepository? Repository { get; set; }
+		public IArquivoHttpRepository? ArquivoRepo { get; set; }
 
 		private async Task HandleSelected(InputFileChangeEventArgs e)
 		{
@@ -38,9 +40,11 @@ namespace AeroVendas.ULF.Cliente.Shared
 				content.Add(new StreamContent(ms, Convert.ToInt32(resizedFile.Size)),
 					"image", imageFile.Name);
 
-				ImgUrl = await Repository.UploadMensagensImage(content);
+				arquivo = await ArquivoRepo.UploadImagem(content);
 
-				await OnChange.InvokeAsync(ImgUrl);
+				 _content = Convert.ToBase64String(arquivo.DataFiles);
+			
+				await OnChange.InvokeAsync(_content);
 			}
 		}
 	}

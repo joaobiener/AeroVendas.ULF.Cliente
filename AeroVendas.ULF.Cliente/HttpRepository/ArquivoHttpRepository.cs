@@ -9,6 +9,7 @@ using AeroVendas.ULF.Cliente.HttpRepository;
 using Shared.DataTransferObjects;
 using Entities.Configuration;
 using Microsoft.Extensions.Options;
+using AngleSharp.Io;
 
 namespace AeroVendas.ULF.Cliente.HttpRepository
 {
@@ -30,13 +31,19 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 		}
 
 
-		public async Task<string> UploadMensagensImage(MultipartFormDataContent content)
+		public async Task<Arquivo> UploadImagem(MultipartFormDataContent content)
 		{
-			var postResult = await _client.PostAsync("upload", content);
+			var postResult = await _client.PostAsync("Upload", content);
 			var postContent = await postResult.Content.ReadAsStringAsync();
-			var imgUrl = Path.Combine(_apiConfiguration.BaseAddress, postContent);
 
-			return imgUrl;
+
+
+			Arquivo arquivo = JsonSerializer.Deserialize<Arquivo>(postContent, _options);
+				//MetaData = JsonSerializer.Deserialize<MetaData>(
+				//	response.Headers.GetValues("X-Pagination").First(), _options)
+		
+			
+			return arquivo;
 		}
 
 		/*

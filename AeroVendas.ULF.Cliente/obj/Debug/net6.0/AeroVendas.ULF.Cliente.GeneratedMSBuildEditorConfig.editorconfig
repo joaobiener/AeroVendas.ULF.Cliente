@@ -92,6 +92,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlTWVuc2FnZW1IVE1MLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/UploadImagem.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBsb2FkSW1hZ2VtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Shared/Confirmation.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

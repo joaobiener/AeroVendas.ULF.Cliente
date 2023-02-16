@@ -62,15 +62,7 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 		public async Task DeleteMensagem(Guid id)
 			=> await _client.DeleteAsync(Path.Combine("MensagemHTML", id.ToString()));
 
-		public async Task<string> UploadMensagensImage(MultipartFormDataContent content)
-		{
-			var postResult = await _client.PostAsync("upload", content);
-			var postContent = await postResult.Content.ReadAsStringAsync();
-			var imgUrl = Path.Combine(_apiConfiguration.BaseAddress, postContent);
-
-			return imgUrl;
-		}
-
+		
 
 		public async Task UpdateMensagem(MensagemHtml mensagem)
 		{
