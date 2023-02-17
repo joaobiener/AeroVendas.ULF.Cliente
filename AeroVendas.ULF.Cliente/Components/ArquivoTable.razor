@@ -1,55 +1,31 @@
 ﻿@if (arquivos.Any() && !Aguardando)
 {
-	<table class="table table-success table-hover shadow">
-		<thead>
-			<tr>
-				<th>Nome</th>
-				<th>Imagem</th>
-				<th></th>
-				<th></th>
-			</tr>
-		</thead>
-		<tbody>
-			@foreach (var arquivo in arquivos)
-			{
-				<tr>
 
-					<td class="align-middle">
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		@foreach (var arquivo in arquivos)
+		{
+				<div class="col">
+					<div class="card">
+						<img class="card-img-top" src="@arquivo.Tipo" alt="Card image" />
 
-						<a class="link-secondary" href="/Arquivos/@arquivo.Id">
-							@arquivo.Nome
-						</a>
-					</td>
-
-					<td class="align-middle">
-						<img class="image" src="@arquivo.Tipo" width="200px" />
-					</td>
-					
-					<td class="align-middle">
-
-						<button type="button" class="btn btn-danger"
-						@onclick="() => CallCopyLink(arquivo)">
-									Copy Link
-						</button>
 						
-					</td>
-					<td class="align-middle">
+							<h4 class="card-title">@arquivo.Nome</h4>
+							<p class="card-text">@arquivo.CriadoEm</p>
+							<button type="button" class="btn btn-danger"
+							@onclick="() => CallConfirmationModal(arquivo.Id)">
+								<iconify-icon icon="oi:circle-x"></iconify-icon>
+							</button>
+					</div>
+				  </div>
+				
+				
+		}
+	</div>
 
-						<button type="button" class="btn btn-danger"
-						@onclick="() => CallConfirmationModal(arquivo.Id)">
-							<iconify-icon icon="oi:circle-x"></iconify-icon>
-						</button>
-
-					</td>
-
-				</tr>
-			}
-		</tbody>
-	</table>
+	
 	<Confirmation BodyMessage="Deseja apagar esta imagem?"
 				  OnOKClicked="DeleteArquivo" @ref="_confirmation" />
-	<Confirmation BodyMessage="Deseja Copiar o Link?"
-			  OnOKClicked="CopyLink" @ref="_ConfirmationCopyLink" />
+
 }
 else
 {

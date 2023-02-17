@@ -47,7 +47,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 
             foreach (Arquivo arquivo in ArquivoList)
             {
-				if ((arquivo.Tipo==null) || (arquivo.Tipo.Length < 20){ 
+				if ((arquivo.Tipo==null) || (arquivo.Tipo.Length < 20)){ 
 					string path = await ArquivoRepo.DownloadFilePath(arquivo.Id);
 					arquivo.Tipo = path;
 				}
