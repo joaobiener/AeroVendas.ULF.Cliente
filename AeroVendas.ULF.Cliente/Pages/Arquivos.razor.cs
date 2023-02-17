@@ -4,6 +4,7 @@ using Entities.Models;
 using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
 using Microsoft.AspNetCore.Components;
+using Blazored.Toast.Services;
 
 namespace AeroVendas.ULF.Cliente.Pages
 {
@@ -14,7 +15,8 @@ namespace AeroVendas.ULF.Cliente.Pages
 		public MetaData MetaData { get; set; } = new MetaData();
 
 		private ViewAeroVendasParameters _mensagemParameters = new ViewAeroVendasParameters();
-
+		[Inject]
+		public IToastService? ToastService { get; set; }
 		[Inject]
 		public IArquivoHttpRepository ArquivoRepo { get; set; }
 
@@ -75,7 +77,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 		private async Task DeleteArquivo(Guid id)
 		{
 			await ArquivoRepo.DeleteArquivo(id);
-
+			ToastService.ShowSuccess($"Imagem foi apagada com sucesso.");
 			if (_mensagemParameters.PageNumber > 1 && ArquivoList.Count == 1)
 				_mensagemParameters.PageNumber--;
 
