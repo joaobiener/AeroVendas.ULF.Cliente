@@ -16,6 +16,9 @@ namespace AeroVendas.ULF.Cliente.Components
 		[Parameter]
 		public EventCallback<Guid> OnDelete { get; set; }
 
+		[Parameter]
+		public EventCallback<Guid> OnCopy { get; set; }
+
 
 		[Parameter]
 		public bool Aguardando { get; set; }
@@ -23,7 +26,14 @@ namespace AeroVendas.ULF.Cliente.Components
 		private Confirmation? _confirmation;
 
 		private Guid _arquivoIdToDelete;
-		
+		private Guid _arquivoIdToCopy;
+
+		private async void CallCopyElement(Guid id)
+		{
+			//_arquivoIdToCopy = id;
+			 await OnCopy.InvokeAsync(id);
+
+		}
 
 		private void CallConfirmationModal(Guid id)
 		{
@@ -36,6 +46,8 @@ namespace AeroVendas.ULF.Cliente.Components
 			_confirmation.Hide();
 			await OnDelete.InvokeAsync(_arquivoIdToDelete);
 		}
+
+
 
 
 	}

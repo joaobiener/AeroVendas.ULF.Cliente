@@ -5,16 +5,23 @@
 		@foreach (var arquivo in arquivos)
 		{
 				<div class="col">
-					<div class="card">
-						<img class="card-img-top" src="@arquivo.Tipo" alt="Card image" />
-
+				<div class="card h-100">	
+					<img id="@arquivo.Id" class="card-img-top" src="@arquivo.Tipo" alt="Card image" />
 						
-							<h4 class="card-title">@arquivo.Nome</h4>
-							<p class="card-text">@arquivo.CriadoEm</p>
-							<button type="button" class="btn btn-danger"
-							@onclick="() => CallConfirmationModal(arquivo.Id)">
-								<iconify-icon icon="oi:circle-x"></iconify-icon>
-							</button>
+        
+					<div class="card-body">							
+						<h4 class="card-title">@arquivo.Nome</h4>
+						<p class="card-text">@arquivo.CriadoEm</p>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn btn-success"
+						@onclick="() => CallConfirmationModal(arquivo.Id)">
+							<iconify-icon icon="oi:circle-x"></iconify-icon> Apagar
+						</button>
+						<button type="button" class="btn btn-success float-end" @onclick="() => CallCopyElement(arquivo.Id)" ><iconify-icon icon="line-md:clipboard-arrow-twotone" style="font-size: 36px" class="iconify--line-md"></iconify-icon>Copiar Link</button>
+						
+					</div>
+						
 					</div>
 				  </div>
 				

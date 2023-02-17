@@ -6,6 +6,7 @@ using Shared.RequestFeatures;
 using Microsoft.AspNetCore.Components;
 using Blazored.Toast.Services;
 using AeroVendas.ULF.Cliente.Shared;
+using Microsoft.JSInterop;
 
 namespace AeroVendas.ULF.Cliente.Pages
 {
@@ -16,6 +17,12 @@ namespace AeroVendas.ULF.Cliente.Pages
 		public MetaData MetaData { get; set; } = new MetaData();
 
 		private ViewAeroVendasParameters _mensagemParameters = new ViewAeroVendasParameters();
+
+
+		[Inject]
+		public IJSRuntime? JSRuntime { get; set; }
+
+		private IJSObjectReference? _jsModule;
 		[Inject]
 		public IToastService? ToastService { get; set; }
 		[Inject]
@@ -23,6 +30,17 @@ namespace AeroVendas.ULF.Cliente.Pages
 
 		[Inject]
 		public HttpInterceptorService Interceptor { get; set; }
+
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                _jsModule = await JSRuntime.InvokeAsync<IJSObjectReference>("import",
+                "/scripts/jsAero.js");
+
+            }
+        }
+
 
 		protected async override Task OnInitializedAsync()
 		{
@@ -89,7 +107,11 @@ namespace AeroVendas.ULF.Cliente.Pages
 			await GetArquivo();
 		}
 
-		
+
+		private async Task CopyClipbard(Guid id) { 
+				await _jsModule.InvokeVoidAsync("CopyClipbardSrcImage", id);
+				ToastService.ShowSuccess($"Link da imagem compiado com sucesso.");
+		}
 		public void Dispose() => Interceptor.DisposeEvent();
 	}
 }

@@ -2,6 +2,20 @@
 	alert(message);
 }
 
+export function CopyClipbardSrcImage(IdElement) {
+	// Get the text field
+	var copySrc = document.getElementById(IdElement);
+
+	// Select the text field
+	copyText.select();
+	copyText.setSelectionRange(0, 99999); // For mobile devices
+
+	// Copy the text inside the text field
+	navigator.clipboard.writeText(copyText.value);
+
+	// Alert the copied text
+	alert("Copied the text: " + copyText.value);
+}
 export function showAlertObject(person) {
 	const message = 'This person is called ' + person.name + ' and is ' + person.age +
 		' years old';
