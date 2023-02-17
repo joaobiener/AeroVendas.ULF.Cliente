@@ -35,7 +35,6 @@ namespace AeroVendas.ULF.Cliente.Pages
             
         }
 
-   
         private void AssignImageUrl(string arquivoSrc)
             => arquivoDtFile = arquivoSrc;
         //     private void AssignImage(FileUploadModel fileUpload)

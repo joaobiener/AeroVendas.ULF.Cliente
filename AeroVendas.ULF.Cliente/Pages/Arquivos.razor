@@ -1,0 +1,52 @@
+﻿@page "/Arquivos"
+@using AeroVendas.ULF.Cliente.Components
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+
+<div id="content">
+
+	<div class="panel-heading h1">Lista de templates E-mail</div>
+	<div class="panel-body">
+		<div class="row mb-3">
+
+			<div class="col-md-5">
+				<Search OnSearchChanged="SearchChanged" />
+			</div>
+			<div class="col-md-5">
+			</div>
+			@*<div class="col-md-2">
+				<SortMensagemHTML OnSortChanged="SortChanged" />
+			</div>*@
+			
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col hideWhenPrint">
+			<Pagination MetaData="MetaData" Spread="1" SelectedPage="SelectedPage" />
+		</div>
+
+		<div class="col-md-1 hideWhenPrint">
+			<PageSizeDropDown SelectedPageSize="SetPageSize" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<a class="btn btn-success mb-1" href="/uploadImage">Upload Imagem</a>
+		</div>
+	</div>
+	<div class="row">
+
+		<div class="col">
+			<ArquivoTable arquivos="ArquivoList" OnDelete="DeleteArquivo" Aguardando="Aguardando" />
+		</div>
+
+	</div>
+</div>
+<div class="row">
+	<div class="col hideWhenPrint">
+		<Pagination MetaData="MetaData" Spread="1" SelectedPage="SelectedPage" />
+	</div>
+</div>

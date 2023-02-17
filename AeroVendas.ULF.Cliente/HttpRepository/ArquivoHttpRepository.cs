@@ -75,6 +75,8 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 			return pagingResponse;
 		}
 
+		public async Task DeleteArquivo(Guid id)
+			=> await _client.DeleteAsync(Path.Combine("Upload", id.ToString()));
 
 	}
 }

@@ -67,7 +67,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 			{
 				
 				Error = result.ErrorMessage;
-				ShowToastrInfo(Error);
+				Task task = ShowToastrInfo(Error);
 				//ShowAuthError = true;
 			}
 			else

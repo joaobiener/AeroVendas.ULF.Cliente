@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Components/ArquivoTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcnF1aXZvVGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Components/AuthLinks.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBdXRoTGlua3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -131,6 +135,10 @@ build_metadata.AdditionalFiles.CssScope = b-u10iee6wf6
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Components/SearchHtml.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWFyY2hIdG1sLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-pu2eehipa3
+
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/Arquivos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJxdWl2b3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1z76fe1cbk
 
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/ContratosSemAero.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udHJhdG9zU2VtQWVyby5yYXpvcg==
