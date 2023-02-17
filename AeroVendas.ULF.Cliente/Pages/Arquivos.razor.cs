@@ -5,6 +5,7 @@ using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
 using Microsoft.AspNetCore.Components;
 using Blazored.Toast.Services;
+using AeroVendas.ULF.Cliente.Shared;
 
 namespace AeroVendas.ULF.Cliente.Pages
 {
@@ -83,7 +84,16 @@ namespace AeroVendas.ULF.Cliente.Pages
 
 			await GetArquivo();
 		}
-		
+
+		private async Task<string> CopyLink(Guid id)
+		{
+			string path = await ArquivoRepo.DownloadFilePath(id);
+			//_confirmation.BodyMessage(""
+			
+			//			_confirmation.Show();
+			return path;
+
+		}
 		public void Dispose() => Interceptor.DisposeEvent();
 	}
 }

@@ -10,6 +10,7 @@ using Shared.DataTransferObjects;
 using Entities.Configuration;
 using Microsoft.Extensions.Options;
 using AngleSharp.Io;
+using AeroVendas.ULF.Cliente.Pages;
 
 namespace AeroVendas.ULF.Cliente.HttpRepository
 {
@@ -75,8 +76,24 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 			return pagingResponse;
 		}
 
+
 		public async Task DeleteArquivo(Guid id)
 			=> await _client.DeleteAsync(Path.Combine("Upload", id.ToString()));
 
+		public async Task<string> DownloadFilePath(Guid id)
+		{
+			var path = await _client.GetStringAsync(Path.Combine("Upload", "DownloadFile", id.ToString()));
+
+			return path;
+
+		}
+
+		public async Task<Arquivo> GetArquivoById(Guid id)
+		{
+			var arquivo = await _client.GetFromJsonAsync<Arquivo>($"Upload/{id}");
+
+			return arquivo;
+
+		}
 	}
 }

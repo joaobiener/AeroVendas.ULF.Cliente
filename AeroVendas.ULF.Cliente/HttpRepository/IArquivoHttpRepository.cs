@@ -16,5 +16,8 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 		Task<Arquivo> UploadImagem(MultipartFormDataContent content);
 		Task DeleteArquivo(Guid id);
 
+		Task<string> DownloadFilePath(Guid id);
+
+		Task<Arquivo> GetArquivoById(Guid id);
 	}
 }
