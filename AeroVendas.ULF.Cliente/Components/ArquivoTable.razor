@@ -4,7 +4,6 @@
 		<thead>
 			<tr>
 				<th>Nome</th>
-				<th>Link</th>
 				<th>Imagem</th>
 				<th></th>
 				<th></th>
@@ -21,9 +20,7 @@
 							@arquivo.Nome
 						</a>
 					</td>
-					<td class="align-middle">
-						
-					</td>
+
 					<td class="align-middle">
 						<img class="image" src="@arquivo.Tipo" width="200px" />
 					</td>
@@ -31,7 +28,7 @@
 					<td class="align-middle">
 
 						<button type="button" class="btn btn-danger"
-						@onclick="() => CallCopyLink(arquivo.Id)">
+						@onclick="() => CallCopyLink(arquivo)">
 									Copy Link
 						</button>
 						

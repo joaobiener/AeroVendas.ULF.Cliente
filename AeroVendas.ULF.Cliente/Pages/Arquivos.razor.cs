@@ -47,8 +47,12 @@ namespace AeroVendas.ULF.Cliente.Pages
 
             foreach (Arquivo arquivo in ArquivoList)
             {
-                arquivo.Tipo = string.Concat("data:image / gif; base64,", Convert.ToBase64String(arquivo.DataFiles));
-            }
+				if ((arquivo.Tipo==null) || (arquivo.Tipo.Length < 20){ 
+					string path = await ArquivoRepo.DownloadFilePath(arquivo.Id);
+					arquivo.Tipo = path;
+				}
+
+			}
             Aguardando = false;
 		}
 
@@ -85,15 +89,7 @@ namespace AeroVendas.ULF.Cliente.Pages
 			await GetArquivo();
 		}
 
-		private async Task<string> CopyLink(Guid id)
-		{
-			string path = await ArquivoRepo.DownloadFilePath(id);
-			//_confirmation.BodyMessage(""
-			
-			//			_confirmation.Show();
-			return path;
-
-		}
+		
 		public void Dispose() => Interceptor.DisposeEvent();
 	}
 }

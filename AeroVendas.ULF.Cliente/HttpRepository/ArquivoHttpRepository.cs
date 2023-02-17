@@ -82,7 +82,7 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 
 		public async Task<string> DownloadFilePath(Guid id)
 		{
-			var path = await _client.GetStringAsync(Path.Combine("Upload", "DownloadFile", id.ToString()));
+			var path = _apiConfiguration.BaseAddress +  await _client.GetStringAsync(Path.Combine("Upload", "DownloadFile", id.ToString()));
 
 			return path;
 

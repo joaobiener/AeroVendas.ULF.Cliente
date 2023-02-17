@@ -12,25 +12,18 @@ namespace AeroVendas.ULF.Cliente.Components
 		[Parameter]
 		public List<Arquivo>? arquivos{ get; set; }
 
+
 		[Parameter]
 		public EventCallback<Guid> OnDelete { get; set; }
 
-		[Parameter]
-		public EventCallback<Guid> OnCopyLink { get; set; }
 
 		[Parameter]
 		public bool Aguardando { get; set; }
 
 		private Confirmation? _confirmation;
-		private Confirmation? _ConfirmationCopyLink;
+
 		private Guid _arquivoIdToDelete;
-
-
-		private void CallCopyLink(Guid id)
-		{
-			_arquivoIdToDelete = id;
-			_ConfirmationCopyLink.Show(); 
-		}
+		
 
 		private void CallConfirmationModal(Guid id)
 		{
@@ -44,15 +37,6 @@ namespace AeroVendas.ULF.Cliente.Components
 			await OnDelete.InvokeAsync(_arquivoIdToDelete);
 		}
 
-		private async Task CopyLink()
-		{
-
-			_ConfirmationCopyLink.Hide();
-			await OnCopyLink.InvokeAsync(_arquivoIdToDelete);
-			//Arquivo arquivo = arquivos.Where(x => x.Id == id);
-
-
-		}
 
 	}
 }
