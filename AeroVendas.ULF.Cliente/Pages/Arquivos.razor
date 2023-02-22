@@ -33,12 +33,13 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2">
-			<a class="btn btn-success mb-1" href="/uploadImage">Upload Imagem</a>
+		<div class="col-md-12">
+			<ImageUpload OnChange="AssignImageUrl" />
 		</div>
 	</div>
 	<div class="row">
 
+		
 		<div class="col">
 			<ArquivoTable arquivos="ArquivoList" OnDelete="DeleteArquivo" OnCopy="CopyClipbard" Aguardando="Aguardando" />
 		</div>

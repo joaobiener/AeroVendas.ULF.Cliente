@@ -57,7 +57,7 @@ namespace AeroVendas.ULF.Cliente.HttpRepository
 				["pageNumber"] = parameters.PageNumber.ToString(),
 				["pageSize"] = parameters.PageSize.ToString(),
 				["searchTerm"] = parameters.SearchTerm == null ? string.Empty : parameters.SearchTerm,
-				["orderBy"] = parameters.OrderBy == null ? "" : parameters.OrderBy
+				["orderBy"] = parameters.OrderBy == null ? "CriadoEm desc" : parameters.OrderBy
 			};
 
 

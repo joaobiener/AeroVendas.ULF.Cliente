@@ -1028,5 +1028,5 @@ C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\Y35ej0Y8.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\5m514VS+.gz
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\build-gz\7UaYYVVu.gz
-C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\scopedcss\Shared\ImageUpload.razor.rz.scp.css
 C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\scopedcss\Pages\Arquivos.razor.rz.scp.css
+C:\microservices\UnimeLF\Frontends\AeroVendas.ULF.Cliente\AeroVendas.ULF.Cliente\obj\Debug\net6.0\scopedcss\Components\ImageUpload.razor.rz.scp.css

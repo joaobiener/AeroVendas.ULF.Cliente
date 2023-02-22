@@ -1,16 +1,16 @@
 ﻿<InputFile OnChange="@HandleSelected" style="display:none;" id="file-upload"/>
 
-<button type="button" class="btn btn-info"
+<button type="button" class="btn btn-success mb-2"
 		onclick="document.getElementById('file-upload').click()">
-	Select a File
+	Enviar Arquivo
 </button>
 <span class="image-name">@_fileUploadMessage</span>
 
-@if(arquivo != null)
+@*@if(arquivo != null)
 {
 	<div>
 		<img class="image" src="data:image/jpg;base64,@_content" width="400px">
 
 		
 	</div>
-}
+}*@

@@ -124,6 +124,10 @@ build_metadata.AdditionalFiles.CssScope = b-9swgr1luqw
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-na00wslyz4
 
+[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Components/ImageUpload.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJbWFnZVVwbG9hZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-uwtxilevwp
+
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Components/PageSizeDropDown.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlU2l6ZURyb3BEb3duLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-lh94fr56fz
@@ -167,10 +171,6 @@ build_metadata.AdditionalFiles.CssScope = b-u57b2qsjbe
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Pages/MensagemHTMLPreview.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVuc2FnZW1IVE1MUHJldmlldy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-x3ov9y1pi3
-
-[C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Shared/ImageUpload.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEltYWdlVXBsb2FkLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-pspj04uwpa
 
 [C:/microservices/UnimeLF/Frontends/AeroVendas.ULF.Cliente/AeroVendas.ULF.Cliente/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

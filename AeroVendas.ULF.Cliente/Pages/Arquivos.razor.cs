@@ -5,13 +5,18 @@ using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
 using Microsoft.AspNetCore.Components;
 using Blazored.Toast.Services;
-using AeroVendas.ULF.Cliente.Shared;
 using Microsoft.JSInterop;
+using Microsoft.AspNetCore.Components.Forms;
 
 namespace AeroVendas.ULF.Cliente.Pages
 {
     public partial class Arquivos : IDisposable
 	{
+
+		private Arquivo _arquivo = new Arquivo();
+		private string arquivoDtFile;
+		private EditContext? _editContext;
+
 		public bool Aguardando = false;
 		public List<Arquivo> ArquivoList { get; set; } = new List<Arquivo>();
 		public MetaData MetaData { get; set; } = new MetaData();
@@ -42,9 +47,20 @@ namespace AeroVendas.ULF.Cliente.Pages
         }
 
 
+
+		private void HandleFieldChanged(object? sender, FieldChangedEventArgs e)
+		{
+
+			StateHasChanged();
+
+		}
+
 		protected async override Task OnInitializedAsync()
 		{
+			_editContext = new EditContext(_arquivo);
+			_editContext.OnFieldChanged += HandleFieldChanged;
 			Interceptor.RegisterEvent();
+
 			Interceptor.RegisterBeforeSendEvent();
 			await GetArquivo();
 		}
@@ -73,6 +89,15 @@ namespace AeroVendas.ULF.Cliente.Pages
 			}
             Aguardando = false;
 		}
+
+		private async Task AssignImageUrl(string arquivoSrc)
+		{
+			_mensagemParameters.PageNumber = 1;
+			arquivoDtFile = arquivoSrc;
+			await GetArquivo();
+		
+		}
+		 
 
 		private async Task SetPageSize(int pageSize)
 		{

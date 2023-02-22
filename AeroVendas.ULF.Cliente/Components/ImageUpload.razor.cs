@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Components.Forms;
 using System.Net.Http.Headers;
 using System.Security.AccessControl;
 
-namespace AeroVendas.ULF.Cliente.Shared
+namespace AeroVendas.ULF.Cliente.Components
 {
     public partial class ImageUpload
 	{
-		private string _fileUploadMessage = "No file chosen";
+		private string _fileUploadMessage = "";
 		private string _content;
 		[Parameter]
 		public Arquivo? arquivo { get; set; }
