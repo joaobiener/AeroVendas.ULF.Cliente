@@ -37,7 +37,7 @@ namespace AeroVendas.ULF.Cliente.Components
                     { Active = MetaData.CurrentPage == i });
                 }
             }
-
+            
             _links.Add(new PagingLink(MetaData.CurrentPage + 1, MetaData.HasNext, ">"));
 			_links.Add(new PagingLink(MetaData.TotalPages, MetaData.HasNext, ">>"));
 		}

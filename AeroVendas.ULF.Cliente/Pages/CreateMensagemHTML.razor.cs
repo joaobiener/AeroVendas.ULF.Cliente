@@ -28,7 +28,7 @@ public partial class CreateMensagemHTML : IDisposable
 			"'insertdatetime media table paste code help wordcount']"
 			},
 			{"content_style",  "body { font-family:Helvetica,Arial,sans-serif; font-size:14px" },
-			{"height" , "1000px" }
+			{"height" , "500px" }
             //{"skin", "oxide-dark" }
             ////{"content_css", "dark" }
 

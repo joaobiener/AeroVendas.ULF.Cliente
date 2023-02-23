@@ -7,16 +7,18 @@
     <title>Aero Vendas</title>
     <base href="/" />
 
-    <link href="_content/Blazored.Toast/blazored-toast.min.css" rel="stylesheet" />
+    <!--<link href="_content/Blazored.Toast/blazored-toast.min.css" rel="stylesheet" />-->
     <link href="css/app.css" rel="stylesheet" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
     <link href="_content/AeroVendas.ULF.Cliente.Toastr/toastr.min.css" rel="stylesheet" />
     <link href="AeroVendas.ULF.Cliente.styles.css" rel="stylesheet" />
-    <script src="_content/TinyMCE.Blazor/tinymce-blazor.js" no-api-key></script>
+    <!--<script src="_content/TinyMCE.Blazor/tinymce-blazor.js" no-api-key></script>-->
     <script src="scritps/iconify-icon.min.js"></script>
-
+    <script src="_framework/blazor.server.js"></script>
+    <script src="_content/TinyMCE.Blazor/tinymce-blazor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.9.2/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 
 <body>
@@ -41,25 +43,9 @@
     <script src="_content/AeroVendas.ULF.Cliente.Toastr/iconify-icon.min.js"></script>
 
     
-    <script src="https://cdn.tiny.cloud/1/fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!--<script src="https://cdn.tiny.cloud/1/fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     </script>
-    <script>
-        tinymce.init({
-            selector: 'textarea#basic-example',
-            height: 500,
-            plugins: [
-                'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-                'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-                'insertdatetime', 'media', 'table', 'help', 'wordcount'
-            ],
-            toolbar: 'undo redo | blocks | ' +
-                'bold italic backcolor | alignleft aligncenter ' +
-                'alignright alignjustify | bullist numlist outdent indent | ' +
-                'removeformat | help',
-            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
-        });
 
-    </script>
 </body>
 
 </html>

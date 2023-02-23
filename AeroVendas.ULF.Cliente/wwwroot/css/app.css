@@ -33,6 +33,10 @@ a, .btn-link {
 /* Configuração Paginação da Impressão - Inicio */
 
 
+.mce-notification {
+    display: none !important;
+}
+
 
 .btn-primary {
     color: #fff;

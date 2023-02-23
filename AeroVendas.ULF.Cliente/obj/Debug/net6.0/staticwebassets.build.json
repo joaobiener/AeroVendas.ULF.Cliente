@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+bnRLujPqiWCiQRTK3R7XaHsFk7VFnato8BhVzQu0es=",
+  "Hash": "w6buPifiQjmyVXYftUbvkVT5vdkNlxJWjg08lx+cMRY=",
   "Source": "AeroVendas.ULF.Cliente",
   "BasePath": "/",
   "Mode": "Root",
@@ -30770,6 +30770,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\scripts\\jsExamples2.js"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\scripts\\tinymce.min.js",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "scripts/tinymce.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\tinymce.min.js"
     },
     {
       "Identity": "C:\\Users\\jpedrosup\\.nuget\\packages\\blazored.toast\\4.0.0\\staticwebassets\\Blazored.Toast.bundle.scp.css",

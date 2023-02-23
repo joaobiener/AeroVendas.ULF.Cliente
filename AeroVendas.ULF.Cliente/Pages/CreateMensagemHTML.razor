@@ -15,20 +15,19 @@
 
 	<InputText hidden="true" id="templateEmailHtml" class="form-control" @bind-Value="_mensagem.TemplateEmailHtml" />
 
-	
+
 	<div class="row">
-		<div class="col-md-12">
-			<button type="submit" class="btn btn-success float-end" 
-					disabled="@formInvalid">Criar</button>
+		<div class="col">
+			<a href="/MensagemHTML" class="btn btn-danger float-end">Voltar</a>
+			<button type="submit" class="btn btn-success me-4 float-end"
+					disabled="@formInvalid">
+				Gravar
+			</button>
+
+
 		</div>
 	</div>
+	
 </EditForm>
-<Editor @bind-Value="_mensagem.TemplateEmailHtml" ApiKey="Fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0" Disable=@disable Conf="@editorConf" />
-
-<br />
-<div class="row">
-	<div class="col">
-		<a href="/MensagemHTML" class="btn btn-success">Back</a>
-	</div>
-</div>
-
+@*<Editor @bind-Value="_mensagem.TemplateEmailHtml" ApiKey="Fzx94ksz5pf42cvc074lz2yikzw5x780fg8y6501jwkwoat0" Disable=@disable Conf="@editorConf" />*@
+<Editor @bind-Value="_mensagem.TemplateEmailHtml"  Disable=@disable Conf="@editorConf" />

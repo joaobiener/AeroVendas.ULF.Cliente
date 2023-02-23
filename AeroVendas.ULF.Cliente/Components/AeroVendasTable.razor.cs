@@ -13,5 +13,7 @@ namespace AeroVendas.ULF.Cliente.Components
 		[Parameter]
 		public bool Aguardando { get; set; }
 
+
+
 	}
 }
