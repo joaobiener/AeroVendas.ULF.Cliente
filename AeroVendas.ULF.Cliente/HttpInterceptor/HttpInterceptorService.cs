@@ -24,13 +24,16 @@ namespace AeroVendas.ULF.Cliente.HttpInterceptor
 			_refreshTokenService = refreshTokenService;
 		}
 
+		
 		public void RegisterEvent() => _interceptor.AfterSend += HandleResponse;
+		
 		public void RegisterBeforeSendEvent() =>
 			_interceptor.BeforeSendAsync += InterceptBeforeSendAsync;
 
 		public void DisposeEvent()
 		{
 			_interceptor.AfterSend -= HandleResponse;
+			
 			_interceptor.BeforeSendAsync -= InterceptBeforeSendAsync;
 		}
 

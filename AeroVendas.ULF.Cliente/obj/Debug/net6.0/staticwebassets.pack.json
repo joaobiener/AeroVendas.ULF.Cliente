@@ -5217,6 +5217,10 @@
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
+      "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\scripts\\iconify-icon.min.js",
+      "PackagePath": "staticwebassets\\scripts\\iconify-icon.min.js"
+    },
+    {
       "Id": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\scripts\\jsAero.js",
       "PackagePath": "staticwebassets\\scripts\\jsAero.js"
     },

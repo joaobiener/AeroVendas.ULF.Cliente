@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w6buPifiQjmyVXYftUbvkVT5vdkNlxJWjg08lx+cMRY=",
+  "Hash": "E0/NYjqRiG0hs4rHmJutKX8KmoiWAgEAaG3Yyaf8Xas=",
   "Source": "AeroVendas.ULF.Cliente",
   "BasePath": "/",
   "Mode": "Root",
@@ -30719,6 +30719,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+    },
+    {
+      "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\scripts\\iconify-icon.min.js",
+      "SourceId": "AeroVendas.ULF.Cliente",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "scripts/iconify-icon.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\iconify-icon.min.js"
     },
     {
       "Identity": "C:\\microservices\\UnimeLF\\Frontends\\AeroVendas.ULF.Cliente\\AeroVendas.ULF.Cliente\\wwwroot\\scripts\\jsAero.js",
